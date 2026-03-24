@@ -33,6 +33,12 @@ Write the day’s findings into `intel/daily/YYYY-MM-DD.md`.
 Keep notes concise.
 Use compact bullets unless an item clearly deserves a fuller summary.
 
+When the intake is likely to be turned into a PDF later:
+- keep each item as a coherent block
+- avoid one-line orphan bullets under a heading
+- avoid separating links far away from the item they belong to
+- prefer clean subsection structure that can survive print export without awkward page breaks
+
 ## 5. Promote
 
 Promote only strong items into durable folders.

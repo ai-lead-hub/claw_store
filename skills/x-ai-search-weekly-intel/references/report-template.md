@@ -8,6 +8,8 @@ Seed post: <X post URL>
 - Main patterns
 - Biggest standout item(s)
 
+<!-- PDF layout note: keep each item block semantically grouped so heading + summary + links can stay together on export. Avoid tiny fragmented subsections. -->
+
 ## Grouped findings
 
 ### <group name>

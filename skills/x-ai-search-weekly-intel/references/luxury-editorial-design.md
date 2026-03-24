@@ -161,3 +161,8 @@ When collecting assets:
 - preserve the intended palette in print CSS
 - remove accidental white PDF borders
 - favor a calm continuous-scroll editorial flow over rigid page segmentation
+- structure markdown/HTML so sections do not split awkwardly across pages
+- keep headings attached to the content that follows
+- avoid orphan lines, isolated bullets, and lonely source links at page tops/bottoms
+- use print CSS such as `break-inside: avoid`, `page-break-inside: avoid`, and heading keep-with-next patterns for entries, figures, and callouts
+- prefer fewer stronger sections over many tiny fragmented blocks when PDF readability matters
