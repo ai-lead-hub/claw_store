@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daily Frontier Research — 2026-03-24</title>
+  <style>
+    :root {
+      --bg: #F9F8F6;
+      --paper: #F9F8F6;
+      --muted-bg: #EBE5DE;
+      --ink: #1A1A1A;
+      --muted: #6C6863;
+      --gold: #D4AF37;
+      --line: rgba(26,26,26,.14);
+      --line-soft: rgba(26,26,26,.08);
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--ink);
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    body {
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      padding: 0;
+    }
+    .page {
+      max-width: 920px;
+      margin: 0 auto;
+      background: var(--paper);
+      min-height: 100vh;
+      position: relative;
+    }
+    .grain {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: .02;
+      background-image: radial-gradient(#000 0.6px, transparent 0.6px);
+      background-size: 8px 8px;
+    }
+    .wrap {
+      padding: 22mm 18mm 22mm;
+    }
+    .overline {
+      font-size: 11px;
+      letter-spacing: .28em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+    h1, h2, h3 {
+      font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+      font-weight: 400;
+      margin: 0;
+    }
+    h1 {
+      font-size: 56px;
+      line-height: .95;
+      letter-spacing: -.04em;
+      max-width: 760px;
+    }
+    .dek {
+      margin-top: 18px;
+      font-size: 18px;
+      line-height: 1.7;
+      color: #2b2a28;
+      max-width: 760px;
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-top: 26px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .section {
+      margin-top: 44px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+    }
+    .section h2 {
+      font-size: 34px;
+      line-height: 1.02;
+      margin-bottom: 14px;
+    }
+    .section-intro {
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.65;
+      max-width: 760px;
+      margin-bottom: 8px;
+    }
+    .entry {
+      padding: 18px 0 20px;
+      border-top: 1px solid var(--line-soft);
+    }
+    .entry:first-of-type { border-top: none; }
+    .kicker {
+      font-size: 11px;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+    .entry h3 {
+      font-size: 28px;
+      line-height: 1.08;
+      margin-bottom: 10px;
+    }
+    p {
+      margin: 10px 0;
+      font-size: 15px;
+      line-height: 1.72;
+      color: #222;
+    }
+    .why {
+      margin-top: 12px;
+      padding-left: 14px;
+      border-left: 1px solid rgba(212,175,55,.55);
+      color: #2c2b29;
+    }
+    .small {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.7;
+    }
+    a { color: var(--ink); text-decoration-color: rgba(212,175,55,.9); text-underline-offset: 3px; }
+    ul {
+      margin: 10px 0 0 18px;
+      padding: 0;
+      color: #222;
+    }
+    li { margin: 6px 0; line-height: 1.7; }
+    .footer {
+      margin-top: 40px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    @page { size: A4; margin: 0; }
+    @media print {
+      html, body, .page { background: var(--bg) !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="grain"></div>
+  <main class="page">
+    <div class="wrap">
+      <div class="overline">Daily frontier research / short edition</div>
+      <h1>What matters today in the AI stack around creative work</h1>
+      <div class="dek">
+        A short daily pass focused on frontier models and workflow infrastructure that could affect an AI filmmaking startup. This is not a full report — just the strongest directional signals from today’s quick sweep.
+      </div>
+      <div class="meta">
+        <div>Date / 2026-03-24</div>
+        <div>Scope / short daily pass</div>
+        <div>Lens / AI filmmaking startup</div>
+      </div>
+
+      <section class="section">
+        <h2>Executive summary</h2>
+        <p class="section-intro">The clearest pattern in today’s sample is that the opportunity is not only in better generators, but in the systems around them: stronger agent models, multimodal action models, and tools that make creative teams operate faster and with more structure.</p>
+        <ul>
+          <li><strong>MiMo V2 Omni</strong> matters because multimodal action models are getting closer to software-operating agents rather than plain chat systems.</li>
+          <li><strong>MiniMax M2.7</strong> matters as an orchestration and productivity layer, not as a direct filmmaking generator.</li>
+          <li><strong>MiroThinker</strong> reinforces the rise of research/report agents as part of the product stack, not just internal tooling.</li>
+          <li><strong>Luma</strong> keeps pushing the idea of creative agents that span more of the workflow than just single-shot generation.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Key items</h2>
+        <div class="section-intro">Short summaries of the strongest signals from today’s quick pass.</div>
+
+        <article class="entry">
+          <div class="kicker">Multimodal action model</div>
+          <h3>MiMo V2 Omni</h3>
+          <p>Xiaomi frames MiMo V2 Omni as a model that can see, hear, read, and act — not just answer in text. The important part is not the marketing phrasing; it is the product direction: multimodal perception tied directly to tool use and UI grounding.</p>
+          <div class="why">
+            <p><strong>Why it matters:</strong> If AI filmmaking software becomes more agentic, the winning systems will likely need to interpret images, video, interfaces, and instructions together. Omni-style models point toward that operating model.</p>
+          </div>
+          <p class="small">Source: <a href="https://mimo.xiaomi.com/mimo-v2-omni">Xiaomi MiMo V2 Omni</a></p>
+        </article>
+
+        <article class="entry">
+          <div class="kicker">Agent / productivity model</div>
+          <h3>MiniMax M2.7</h3>
+          <p>MiniMax positions M2.7 as a strong model for software engineering, office editing, multi-step modifications, and broader productivity tasks. The most relevant takeaway is not “best benchmark,” but that this class of model is being pushed as the brain for real workflow systems.</p>
+          <div class="why">
+            <p><strong>Why it matters:</strong> For a creative company, models like this can become the planning and orchestration layer around scripts, assets, internal docs, experiment logs, and production operations.</p>
+          </div>
+          <p class="small">Source: <a href="https://www.minimax.io/models/text/m27">MiniMax M2.7</a></p>
+        </article>
+
+        <article class="entry">
+          <div class="kicker">Research agent infrastructure</div>
+          <h3>MiroThinker</h3>
+          <p>MiroThinker is a deep research agent optimized for research and prediction tasks, with recent emphasis on report generation and document handling. That matters because research itself is becoming a product capability, not just a back-office function.</p>
+          <div class="why">
+            <p><strong>Why it matters:</strong> Startups building in fast-moving AI markets need better research loops. This points toward a world where competitive research, technical synthesis, and long-form brief generation are first-class AI features.</p>
+          </div>
+          <p class="small">Source: <a href="https://github.com/MiroMindAI/MiroThinker">MiroThinker GitHub</a></p>
+        </article>
+
+        <article class="entry">
+          <div class="kicker">Creative workflow platform</div>
+          <h3>Luma’s “creative agents” framing</h3>
+          <p>Luma’s current product messaging is broader than isolated generation. It emphasizes creative agents that plan, generate, iterate, and refine across video, image, audio, and text with shared context.</p>
+          <div class="why">
+            <p><strong>Why it matters:</strong> This is strategically important because it shifts the battleground from “single best model” to “best system for end-to-end creative work.” That is exactly the terrain an AI filmmaking product has to care about.</p>
+          </div>
+          <p class="small">Source: <a href="https://lumalabs.ai/aisearch1">Luma</a></p>
+        </article>
+      </section>
+
+      <section class="section">
+        <h2>Working interpretation</h2>
+        <p>Today’s signal is not mainly about a new magical creator model. It is about more of the stack becoming operational: agent brains, multimodal actors, research agents, and creative workflow systems. That is a useful reminder that product leverage may come from the orchestration layer as much as from the generation layer.</p>
+        <p>If I were turning this into action, I would:</p>
+        <ul>
+          <li>keep tracking multimodal action models, especially anything that combines UI grounding with image/video understanding</li>
+          <li>watch research-agent tooling as a product feature category, not just internal infrastructure</li>
+          <li>treat “creative agents” framing as an important strategic shift in how vendors are packaging creative AI</li>
+        </ul>
+      </section>
+
+      <div class="footer">Heph / short daily frontier brief</div>
+    </div>
+  </main>
+</body>
+</html>

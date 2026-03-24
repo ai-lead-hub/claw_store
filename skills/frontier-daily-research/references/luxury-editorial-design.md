@@ -1,20 +1,20 @@
-# Luxury Editorial Report Design
+# Luxury / Editorial design system
 
-Use this design direction for research reports, newsletters, and PDF exports.
+Use this as the design north star for research reports, newsletters, HTML exports, and PDFs.
 
 ## Role
 
-Be an expert frontend engineer, UI/UX designer, visual design specialist, and typography expert. Integrate the design system into the existing report workflow in a way that is visually consistent, maintainable, and idiomatic to the stack.
+Act like an expert frontend engineer, UI/UX designer, visual designer, and typography specialist.
 
 Before changing layout or styling:
-- identify the current output stack (markdown, HTML, CSS, PDF export path)
-- inspect existing typography, spacing, color choices, and layout patterns
-- respect maintainability over one-off styling hacks
-- prefer reusable layout and typography tokens
+- identify the output stack in use (markdown, HTML, CSS, PDF export path)
+- inspect existing tokens, spacing, and typography
+- centralize repeated styles into reusable tokens or primitives
+- prefer maintainability over one-off hacks
 
-## Design target
+## Target aesthetic
 
-Build toward a **luxury light-mode editorial newsletter** aesthetic.
+Build toward a **luxury light-mode editorial newsletter**.
 
 Reference vibe:
 - Vogue
@@ -24,70 +24,140 @@ Reference vibe:
 - Hermès
 - Aesop
 
-Core traits:
-- elegance through restraint
-- strong typography hierarchy
-- generous whitespace
-- precise spacing
-- subtle depth
-- intentional asymmetry only when it improves the composition
-- slow, deliberate feeling rather than loud UI
+The feeling should be:
+- elegant through restraint
+- typographically led
+- spacious
+- deliberate
+- architectural
+- premium, tactile, and calm
 
-## Non-negotiables
+## Core palette
 
-- Keep the reading flow primary.
-- Remove anything decorative that does not improve comprehension.
-- Preserve or improve accessibility.
-- Make layouts responsive and export-friendly.
-- Make the report feel like a high-end website printed to PDF, not a markdown dump.
-
-## Color direction
-
-Primary light-mode palette:
 - Background: `#F9F8F6` (warm alabaster)
 - Foreground: `#1A1A1A` (rich charcoal)
 - Muted background: `#EBE5DE` (pale taupe)
+- Muted foreground: `#6C6863` (warm grey)
+- Accent: `#D4AF37` (metallic gold, use sparingly)
+- Accent foreground: `#FFFFFF`
 
-Use dark text on warm light backgrounds by default.
-Avoid burnt-out pure white where possible.
+Rules:
+- never default to pure black or pure white for main surfaces/text
+- use charcoal at 10–20% opacity for borders and dividers
+- use dark inverted sections sparingly with alabaster text when useful
+- never let gold dominate the page
 
-## Typography direction
+## Typography
 
+### Font pairing
+- Heading font: `Playfair Display`
+- Body/UI font: `Inter`
+
+### Hierarchy
+- Hero headlines: huge, dramatic, tight leading
+- Section headlines: still oversized and commanding
+- Subsection titles: clear editorial weight
+- Body text: comfortable reading size with generous line-height
+- Labels / overlines: tiny uppercase with wide tracking
+- Metadata: very small, warm grey, understated
+
+### Rules
 - let typography do the heavy lifting
-- create obvious hierarchy between title, section heads, item heads, body, captions, and metadata
-- keep line lengths comfortable
-- use stronger editorial spacing between sections
-- avoid dense dashboard-like card grids unless the content truly needs them
+- use wide tracking only on labels/buttons, not body text
+- keep body text left-aligned
+- use mixed italic emphasis in major headlines when it adds cadence
+- use drop caps sparingly for intros when it genuinely improves the editorial feel
 
-## Image policy
+## Shape and borders
 
-Image priority order:
+- border radius: `0px`
+- edges should feel precise and architectural
+- prefer thin 1px borders and single-edge dividers over boxed cards
+- use horizontal lines deliberately as editorial structure
+
+## Shadows and depth
+
+- shadows must be soft and subtle
+- depth should feel layered, not loud
+- use slight inner borders or inset framing on images
+- never use harsh drops or glossy UI effects
+
+## Layout
+
+- prefer a 12-column mental model even in static HTML
+- use generous padding and vertical breathing room
+- avoid cramped sections
+- asymmetry is good when intentional, not when messy
+- continuous-scroll reading flow is preferred for long reports
+
+## Images
+
+Priority order:
 1. official hero / official visual asset
-2. official diagram / explainer image
-3. tightly cropped screenshot of the meaningful area
+2. official diagram / explainer visual
+3. tightly cropped screenshot
 4. no image
 
-Never use giant full-page screenshots as filler.
-If using screenshots:
-- crop tightly
-- prefer fixed aspect ratios like 16:9, 4:3, or square
-- show the part that matters, not the entire scroll
+Rules:
+- do not use giant full-page screenshots as filler
+- crop screenshots to meaningful regions
+- default toward large, elegant, well-framed images
+- grayscale-to-color hover is good for website versions, but the static PDF should still look good without hover
 
-## PDF / export policy
+## Signature details to keep in mind
 
-- prefer continuous-scroll HTML structure
-- keep page segmentation visually soft
-- remove accidental white export borders
-- use print CSS that preserves the intended palette and spacing
+These are useful motifs, not mandatory on every page:
+- vertical side labels
+- decorative short horizontal lines
+- visible low-opacity grid lines
+- large type contrasted with tiny uppercase metadata
+- gold hover/underline accents
+- very slow image transitions for web views
+- subtle paper/grain texture at very low opacity
 
-## Browser etiquette for research capture
+## Motion
 
-- prefer reusing existing tabs
-- open a new tab rather than a new window
-- close unused tabs after capture is complete
-- do not leave tab clutter behind
+For web versions:
+- interactions should feel slow and deliberate
+- most transitions: 500–700ms
+- image transitions: 1500–2000ms
+- prefer ease-out or smooth custom bezier curves
 
-## Working style
+For PDFs:
+- design must stand on its own without motion
 
-Think like designing a website first, then exporting it.
-Aim for a premium newsletter or editorial brief, not a generic report template.
+## Inputs / buttons / primitives
+
+If creating reusable web components, prefer:
+- rectangular button variants
+- primary buttons with dark base and restrained gold reveal
+- secondary buttons with thin borders and dark-fill hover
+- underline-only inputs with italic serif placeholders
+- cards defined by top borders and spacing more than by heavy surfaces
+
+## Anti-patterns
+
+Avoid:
+- rounded corners
+- fast/snappy interactions
+- loud color usage
+- cramped layouts
+- generic dashboard card spam
+- giant screenshot dumps
+- decorative clutter
+- gold as a dominant fill color
+
+## Browser etiquette
+
+When collecting assets:
+- reuse tabs where possible
+- prefer tabs over windows
+- close unused tabs afterward
+- do not leave a messy browser state behind
+
+## Export guidance
+
+- design like a website first, then export
+- preserve the intended palette in print CSS
+- remove accidental white PDF borders
+- favor a calm continuous-scroll editorial flow over rigid page segmentation
