@@ -6,47 +6,65 @@
   <title>AI Search Weekly Intel Report — 2026-03-24</title>
   <style>
     :root {
-      --bg: #0b1020;
-      --panel: #131a2b;
-      --panel-2: #1a2338;
-      --ink: #eef2ff;
-      --muted: #a8b3cf;
-      --line: rgba(255,255,255,.10);
-      --blue: #6ea8fe;
-      --violet: #a78bfa;
-      --gold: #f6c76b;
-      --green: #5fd4a5;
+      --bg: #060914;
+      --bg-2: #0a1020;
+      --panel: #0f1628;
+      --panel-2: #141d31;
+      --panel-3: #18233b;
+      --ink: #f3f6ff;
+      --muted: #97a6c7;
+      --line: rgba(183, 201, 255, .12);
+      --line-strong: rgba(183, 201, 255, .22);
+      --blue: #76a9ff;
+      --violet: #b399ff;
+      --gold: #ffcf70;
+      --green: #71dfb3;
       --red: #ff8a80;
-      --shadow: 0 18px 40px rgba(0,0,0,.28);
+      --shadow: 0 22px 60px rgba(0,0,0,.48);
       --radius: 22px;
       --radius-sm: 14px;
       --max: 1120px;
     }
     * { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; background: linear-gradient(180deg, #08101f 0%, #0b1020 25%, #12192b 100%); color: var(--ink); font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background:
+        radial-gradient(1200px 800px at 10% -10%, rgba(55, 93, 181, .22), transparent 45%),
+        radial-gradient(1000px 700px at 100% 0%, rgba(108, 67, 171, .16), transparent 40%),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 45%, #0d1324 100%);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
     body { padding: 34px; }
     .page { max-width: var(--max); margin: 0 auto; }
     .hero {
-      background: radial-gradient(1200px 300px at 15% 0%, rgba(110,168,254,.28), transparent 55%),
-                  radial-gradient(900px 300px at 100% 0%, rgba(167,139,250,.24), transparent 50%),
-                  linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
-      border: 1px solid var(--line);
+      background:
+        radial-gradient(1200px 320px at 12% 0%, rgba(118,169,255,.22), transparent 55%),
+        radial-gradient(900px 360px at 100% 0%, rgba(179,153,255,.18), transparent 52%),
+        linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.012));
+      border: 1px solid var(--line-strong);
       border-radius: 30px;
       padding: 34px 36px 28px;
       box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
     }
     .eyebrow { text-transform: uppercase; letter-spacing: .16em; font-size: 11px; color: var(--blue); font-weight: 700; }
     h1 { margin: 10px 0 10px; font-size: 42px; line-height: 1.02; letter-spacing: -0.04em; }
     .sub { color: var(--muted); font-size: 15px; max-width: 780px; line-height: 1.6; }
     .meta-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 20px; }
-    .chip { border: 1px solid var(--line); background: rgba(255,255,255,.03); border-radius: 999px; padding: 9px 12px; font-size: 12px; color: #d7e0f8; }
+    .chip { border: 1px solid var(--line); background: rgba(14,20,37,.88); border-radius: 999px; padding: 9px 12px; font-size: 12px; color: #dbe4ff; box-shadow: inset 0 1px 0 rgba(255,255,255,.03); }
     .hero-grid { display: grid; grid-template-columns: 1.25fr .95fr; gap: 22px; margin-top: 26px; align-items: start; }
-    .hero-shot, .hero-note { background: rgba(255,255,255,.03); border: 1px solid var(--line); border-radius: 22px; overflow: hidden; }
+    .hero-shot, .hero-note { background: linear-gradient(180deg, rgba(16,23,40,.96), rgba(12,18,32,.98)); border: 1px solid var(--line); border-radius: 22px; overflow: hidden; }
     .hero-shot img { display: block; width: 100%; height: auto; }
     .hero-caption { padding: 12px 14px 14px; color: var(--muted); font-size: 12px; }
     .hero-note { padding: 20px; }
     .hero-note h3 { margin: 0 0 12px; font-size: 20px; }
-    .hero-note ul { margin: 0; padding-left: 18px; color: var(--muted); line-height: 1.55; }
+    .hero-note ul { margin: 0; padding-left: 18px; color: #cad5f2; line-height: 1.6; }
+    .hero-note strong { color: #ffffff; }
 
     .section { margin-top: 26px; }
     .section-head { display: flex; justify-content: space-between; align-items: end; gap: 20px; margin: 0 4px 14px; }
@@ -54,14 +72,14 @@
     .section-head p { margin: 0; color: var(--muted); font-size: 14px; max-width: 620px; }
 
     .scoreboard { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; }
-    .score { background: linear-gradient(180deg, rgba(255,255,255,.045), rgba(255,255,255,.02)); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); }
+    .score { background: linear-gradient(180deg, rgba(20,28,48,.98), rgba(12,18,32,.98)); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); }
     .score .k { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .12em; }
     .score .v { font-size: 28px; margin-top: 10px; font-weight: 800; letter-spacing: -0.04em; }
-    .score .t { margin-top: 10px; color: #d9e3ff; font-size: 13px; line-height: 1.45; }
+    .score .t { margin-top: 10px; color: #cdd7f4; font-size: 13px; line-height: 1.5; }
 
     .cards { display: grid; grid-template-columns: repeat(2,1fr); gap: 18px; }
-    .card { background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.018)); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); break-inside: avoid; }
-    .card img { width: 100%; display: block; aspect-ratio: 16 / 9; object-fit: cover; background: #0b1020; }
+    .card { background: linear-gradient(180deg, rgba(18,26,45,.99), rgba(11,16,29,.99)); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); break-inside: avoid; }
+    .card img { width: 100%; display: block; aspect-ratio: 16 / 9; object-fit: cover; background: #0b1020; filter: saturate(.95) contrast(1.02) brightness(.78); }
     .card-body { padding: 18px 20px 20px; }
     .kicker { display: inline-flex; align-items: center; gap: 8px; border-radius: 999px; padding: 7px 10px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; }
     .k-blue { background: rgba(110,168,254,.14); color: #b9d3ff; }
@@ -69,33 +87,42 @@
     .k-gold { background: rgba(246,199,107,.14); color: #ffe2a0; }
     .k-green { background: rgba(95,212,165,.14); color: #c5ffe8; }
     .card h3 { margin: 12px 0 8px; font-size: 26px; letter-spacing: -0.03em; }
-    .lede { color: #dfe7ff; font-size: 15px; line-height: 1.55; }
-    .why { margin-top: 14px; padding: 14px 15px; border-radius: 16px; background: rgba(255,255,255,.035); border: 1px solid rgba(255,255,255,.08); }
+    .lede { color: #e7eeff; font-size: 15px; line-height: 1.6; }
+    .why { margin-top: 14px; padding: 14px 15px; border-radius: 16px; background: linear-gradient(180deg, rgba(26,37,63,.92), rgba(15,22,37,.92)); border: 1px solid rgba(183, 201, 255, .12); }
     .why strong { display: block; margin-bottom: 6px; font-size: 12px; color: var(--gold); text-transform: uppercase; letter-spacing: .12em; }
     .why p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.55; }
     .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
-    .links a { text-decoration: none; color: var(--ink); background: rgba(255,255,255,.05); border: 1px solid var(--line); border-radius: 999px; padding: 9px 12px; font-size: 12px; }
+    .links a { text-decoration: none; color: var(--ink); background: rgba(16,24,41,.96); border: 1px solid var(--line); border-radius: 999px; padding: 9px 12px; font-size: 12px; box-shadow: inset 0 1px 0 rgba(255,255,255,.03); }
 
     .twocol { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-    .panel { background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.018)); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow); }
+    .panel { background: linear-gradient(180deg, rgba(18,26,45,.98), rgba(11,16,29,.98)); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow); }
     .panel h3 { margin: 0 0 14px; font-size: 20px; }
     .panel ul { margin: 0; padding-left: 18px; color: var(--muted); line-height: 1.65; }
     .panel li + li { margin-top: 8px; }
     .callout { border-left: 3px solid var(--blue); padding-left: 12px; color: #dbe6ff; }
 
     .appendix { display: grid; grid-template-columns: 1fr; gap: 10px; }
-    .source { display: grid; grid-template-columns: 220px 1fr; gap: 16px; padding: 14px 16px; border-radius: 16px; background: rgba(255,255,255,.03); border: 1px solid var(--line); }
+    .source { display: grid; grid-template-columns: 220px 1fr; gap: 16px; padding: 14px 16px; border-radius: 16px; background: linear-gradient(180deg, rgba(18,26,45,.96), rgba(11,16,29,.96)); border: 1px solid var(--line); }
     .source .label { color: #cad7fa; font-weight: 700; }
     .source a { color: #bcd4ff; text-decoration: none; word-break: break-all; }
 
     .footer { margin-top: 22px; color: var(--muted); font-size: 12px; text-align: center; }
 
-    @page { size: A4; margin: 12mm; }
+    @page { size: A4; margin: 10mm; }
     @media print {
-      body { padding: 0; background: #fff; }
+      html, body {
+        background:
+          radial-gradient(1200px 800px at 10% -10%, rgba(55, 93, 181, .22), transparent 45%),
+          radial-gradient(1000px 700px at 100% 0%, rgba(108, 67, 171, .16), transparent 40%),
+          linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 45%, #0d1324 100%) !important;
+        color: var(--ink);
+        padding: 0;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
       .page { max-width: none; }
-      .hero, .score, .card, .panel { box-shadow: none; }
-      a { color: #1d4ed8; }
+      .hero, .score, .card, .panel, .source { box-shadow: none; }
+      a { color: #bcd4ff; }
     }
   </style>
 </head>
