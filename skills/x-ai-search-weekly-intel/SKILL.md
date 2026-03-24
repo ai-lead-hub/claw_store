@@ -10,17 +10,20 @@ Use this skill to turn a recent multi-tool AI Search post into a structured rese
 ## Core workflow
 
 1. Read `references/workflow.md` and follow it in order.
-2. Read `references/design-direction.md` before designing the report.
+2. Read `references/design-direction.md` and `references/luxury-editorial-design.md` before designing the report.
 3. Use visible browser mode only if login/session issues require it; otherwise prefer headless.
-4. Treat the X post as the discovery seed, not the final source of truth.
-5. Research each named tool/model on:
+4. Maintain browser etiquette: reuse tabs when possible, open tabs rather than new windows, and close unused tabs after capture.
+5. Treat the X post as the discovery seed, not the final source of truth.
+6. Research each named tool/model on:
    - official product/company pages
    - GitHub, if relevant
    - arXiv, if relevant
-6. Group items by similar user problem or workflow role, not by hype.
-7. Write a report that is readable by a non-terminal human.
-8. Prefer a designed HTML/CSS report with images/cards/callouts over a plain markdown export.
-9. Render the final report to PDF with `scripts/render_report_pdf.py`.
+7. Cover the full named roundup unless the user explicitly asks for a subset.
+8. Group items by similar user problem or workflow role, not by hype.
+9. Write a report that is readable by a non-terminal human.
+10. Prefer a continuous-scroll, editorial HTML/CSS report that reads like a premium newsletter or website.
+11. Use images sparingly and intelligently: prefer official visuals or diagrams, otherwise use tightly cropped screenshots, otherwise omit the image.
+12. Render the final report to PDF with `scripts/render_report_pdf.py`.
 
 ## Output requirements
 

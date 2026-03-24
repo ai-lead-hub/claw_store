@@ -30,6 +30,8 @@ Ignore obvious filler unless it is useful.
 
 ## Step 3 — Research each item
 
+Unless the user asks for a partial sample, cover the full named roundup from the chosen seed post.
+
 For each extracted item, prioritize these sources in order:
 
 1. Official page
@@ -89,7 +91,7 @@ Per item include:
 - why it matters
 - links: official / GitHub / arXiv as available
 
-## Step 6 — Style
+## Step 6 — Style and layout
 
 Write for a smart operator, not a researcher.
 
@@ -98,11 +100,21 @@ Use:
 - short paragraphs
 - bullets where helpful
 - direct judgments
+- continuous-scroll editorial flow
+- premium newsletter / website reading feel
 
 Avoid:
 - vague hype
 - repeating the same claims from official sites
 - giant unsorted dumps
+- giant full-page screenshots
+- over-designed layouts that are harder to read than the content
+
+Image policy:
+1. official hero / official visual asset
+2. official diagram / explainer image
+3. tightly cropped screenshot
+4. no image
 
 ## Step 7 — Render PDF
 

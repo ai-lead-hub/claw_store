@@ -1,0 +1,42 @@
+# Daily workflow
+
+## 1. Collect
+
+Look across the defined watch scope and gather candidate items for the day.
+
+Use source quality order when possible:
+1. official page or launch post
+2. official docs / release notes
+3. GitHub / arXiv / project page
+4. credible creator or community amplification
+
+## 2. Triage
+
+For each item, decide:
+- summarize now
+- keep as link-only
+- monitor
+- ignore for now
+
+## 3. Rank
+
+Rank by:
+- creative utility
+- startup relevance
+- workflow leverage
+- proof quality
+
+## 4. Write intake
+
+Write the day’s findings into `intel/daily/YYYY-MM-DD.md`.
+
+Keep notes concise.
+Use compact bullets unless an item clearly deserves a fuller summary.
+
+## 5. Promote
+
+Promote only strong items into durable folders.
+
+## 6. Prepare for synthesis
+
+Leave enough structure that a later report generator can read the daily file and assemble a more polished summary.
