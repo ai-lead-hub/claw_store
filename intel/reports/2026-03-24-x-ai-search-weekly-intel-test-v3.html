@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Search Weekly Intel Report — v3</title>
+  <style>
+    :root {
+      --bg: #0a0d14;
+      --paper: #111722;
+      --paper-2: #161e2d;
+      --ink: #eef3ff;
+      --muted: #9aa7c2;
+      --line: rgba(255,255,255,.10);
+      --blue: #83aaff;
+      --green: #73ddb0;
+      --gold: #f0c971;
+      --violet: #ba9cff;
+      --shadow: 0 14px 34px rgba(0,0,0,.32);
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0; padding: 0;
+      background: linear-gradient(180deg, #090c13 0%, #0d1119 100%);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    }
+    body { padding: 28px; }
+    .page { max-width: 860px; margin: 0 auto; }
+    .doc {
+      background: linear-gradient(180deg, var(--paper) 0%, var(--paper-2) 100%);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .topbar {
+      height: 8px;
+      background: linear-gradient(90deg, var(--blue), var(--violet), var(--green));
+      opacity: .9;
+    }
+    .content { padding: 34px 38px 40px; }
+    .eyebrow { color: var(--blue); text-transform: uppercase; letter-spacing: .16em; font-size: 11px; font-weight: 700; }
+    h1 { margin: 10px 0 8px; font-size: 38px; line-height: 1.05; letter-spacing: -0.04em; }
+    .dek { color: #dce6ff; font-size: 16px; line-height: 1.6; max-width: 720px; }
+    .meta { display: flex; gap: 10px; flex-wrap: wrap; margin: 16px 0 22px; }
+    .pill { border: 1px solid var(--line); background: rgba(255,255,255,.03); border-radius: 999px; padding: 8px 11px; color: #dbe5ff; font-size: 12px; }
+    figure { margin: 22px 0; }
+    figure img {
+      display: block; width: 100%; height: auto;
+      border-radius: 14px; border: 1px solid var(--line);
+      background: #0b0f17;
+    }
+    figcaption { color: var(--muted); font-size: 12px; margin-top: 10px; }
+    h2 { margin: 30px 0 10px; font-size: 24px; letter-spacing: -0.03em; }
+    h3 { margin: 24px 0 8px; font-size: 20px; letter-spacing: -0.02em; }
+    p { margin: 10px 0; color: #dde6fb; line-height: 1.72; font-size: 15px; }
+    ul { margin: 10px 0 14px 22px; color: #d9e3fb; line-height: 1.7; }
+    li + li { margin-top: 6px; }
+    .callout {
+      margin: 18px 0; padding: 14px 16px;
+      background: rgba(131,170,255,.08);
+      border: 1px solid rgba(131,170,255,.18);
+      border-left: 4px solid var(--blue);
+      border-radius: 12px;
+      color: #e3ecff;
+    }
+    .section-card {
+      margin: 18px 0; padding: 18px 18px 16px;
+      background: rgba(255,255,255,.025);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+    }
+    .tag { display: inline-block; margin-bottom: 8px; padding: 6px 9px; border-radius: 999px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .11em; }
+    .t-blue { background: rgba(131,170,255,.12); color: #c7d8ff; }
+    .t-green { background: rgba(115,221,176,.12); color: #ccffea; }
+    .t-gold { background: rgba(240,201,113,.12); color: #ffe7aa; }
+    .t-violet { background: rgba(186,156,255,.12); color: #e3d3ff; }
+    .links { margin-top: 10px; }
+    .links a { color: #bcd0ff; text-decoration: none; }
+    .links a + a::before { content: ' · '; color: var(--muted); }
+    .divider { height: 1px; background: var(--line); margin: 28px 0; }
+    .small { color: var(--muted); font-size: 13px; }
+    .footer { margin-top: 28px; color: var(--muted); font-size: 12px; }
+    @page { size: A4; margin: 11mm; }
+    @media print {
+      html, body { background: #0d1119 !important; }
+      body { padding: 0; }
+      .doc { box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <article class="doc">
+      <div class="topbar"></div>
+      <div class="content">
+        <div class="eyebrow">AI filmmaking intelligence · test run v3</div>
+        <h1>AI Search Weekly Intel</h1>
+        <p class="dek">This is a cleaner version of the weekly report format: simpler reading flow, tighter visuals, and less decorative layout. The goal is to feel like a sharp briefing note, not a design exercise.</p>
+
+        <div class="meta">
+          <div class="pill">Date · 2026-03-24</div>
+          <div class="pill">Seed · @aisearchio roundup</div>
+          <div class="pill">Items researched · 5</div>
+          <div class="pill">Lens · AI filmmaking startup</div>
+        </div>
+
+        <figure>
+          <img src="assets/2026-03-24-x-ai-search-weekly-intel-test-v3/seed-post.jpg" alt="Seed post screenshot from AI Search on X" />
+          <figcaption>Seed post used for the run: the AI Search roundup that surfaced the tools and models researched here.</figcaption>
+        </figure>
+
+        <h2>Executive summary</h2>
+        <p>The strongest item in this batch for an AI filmmaking startup is <strong>SparkVSR</strong>. It is directly relevant because it makes video enhancement more controllable instead of treating the model like a black box. That kind of controllability matters more than generic benchmark bragging.</p>
+        <p><strong>Google Stitch</strong> is the best adjacent item. It is not a media model, but it could help quickly prototype the interfaces around a creative workflow product: review panels, shot-planning surfaces, asset browsers, or operator dashboards.</p>
+        <p><strong>MiniMax M2.7</strong> and <strong>NVIDIA Vera Rubin</strong> matter more as ecosystem signals than immediate creator tools. <strong>ID-LoRA</strong> is an upstream research item that matters if low-cost personalization becomes part of future creative pipelines.</p>
+
+        <div class="callout"><strong>Bottom line:</strong> the useful signal here is not “what looked coolest on X.” It is that controllable enhancement and workflow surfaces feel more actionable right now than broad infrastructure narratives.</div>
+
+        <h2>Major items</h2>
+
+        <section class="section-card">
+          <div class="tag t-green">Most practical now</div>
+          <h3>SparkVSR</h3>
+          <p>SparkVSR is an interactive video super-resolution framework from researchers at Texas A&amp;M University with collaborators from YouTube/Google. The key idea is simple and strong: a user can enhance a sparse set of keyframes, then propagate those priors across the rest of the video sequence.</p>
+          <p>That matters because it gives the operator a control handle. Instead of blindly accepting whatever the VSR model outputs, you can steer quality and consistency using chosen frames. For filmmaking and post-production, that is far more useful than a generic “the model is better” claim.</p>
+          <figure>
+            <img src="assets/2026-03-24-x-ai-search-weekly-intel-test-v3/sparkvsr-pipeline.png" alt="SparkVSR inference pipeline diagram" />
+            <figcaption>Useful image, not a giant page screenshot: the SparkVSR pipeline diagram from the project assets.</figcaption>
+          </figure>
+          <p class="links"><a href="https://github.com/taco-group/SparkVSR/tree/main">GitHub</a><a href="https://sparkvsr.github.io/">Project page</a><a href="https://arxiv.org/abs/2603.16864">arXiv</a></p>
+        </section>
+
+        <section class="section-card">
+          <div class="tag t-blue">Best adjacent leverage</div>
+          <h3>Google Stitch</h3>
+          <p>Google Stitch is not directly about image or video generation. Its value here is more tactical: it can accelerate interface ideation and prototyping around creative software.</p>
+          <p>If the startup is building AI filmmaking tooling, a lot of leverage will come from the operator layer — not just the model layer. Tools like Stitch could help compress the cycle between product idea and UI prototype, especially for dashboards, workflow surfaces, and internal control panels.</p>
+          <p class="links"><a href="https://stitch.withgoogle.com/">Official page</a></p>
+        </section>
+
+        <section class="section-card">
+          <div class="tag t-violet">Agent / productivity layer</div>
+          <h3>MiniMax M2.7</h3>
+          <p>MiniMax positions M2.7 as a stronger model for productivity and agent-like task execution. That makes it more relevant as an orchestration layer than as a direct creative generator.</p>
+          <p>For this use case, the interesting question is whether models like this can improve the production stack around creativity: planning, asset handling, research, scripting support, and post-production coordination.</p>
+          <p class="links"><a href="https://www.minimax.io/models/text/m27">Official page</a></p>
+        </section>
+
+        <section class="section-card">
+          <div class="tag t-gold">Research watch</div>
+          <h3>ID-LoRA</h3>
+          <p>ID-LoRA is a parameter-efficient fine-tuning method that tries to reduce trainable overhead while preserving adaptation quality. That is not a creator-facing feature today, but it matters upstream.</p>
+          <p>If cheap personalization, stylistic adaptation, or lightweight domain-specific tuning becomes important to a creative product, methods in this family start to matter. For now, it belongs on the watchlist rather than in the immediate experiment queue.</p>
+          <p class="links"><a href="https://arxiv.org/html/2602.20727v1">arXiv</a></p>
+        </section>
+
+        <section class="section-card">
+          <div class="tag t-blue">Infrastructure signal</div>
+          <h3>NVIDIA Vera Rubin</h3>
+          <p>NVIDIA Vera Rubin is a compute and systems story: more bandwidth, more coherent large-scale systems, better support for larger reasoning and accelerated workloads.</p>
+          <p>It is strategically useful to track, but not the kind of item that should dominate a creative product roadmap unless it clearly changes cost or capability boundaries for deployed media systems.</p>
+          <p class="links"><a href="https://www.nvidia.com/en-us/data-center/technologies/rubin/">Official page</a></p>
+        </section>
+
+        <h2>What matters most</h2>
+        <ul>
+          <li><strong>Most useful right now:</strong> SparkVSR</li>
+          <li><strong>Most useful for product/UI iteration:</strong> Google Stitch</li>
+          <li><strong>Most strategic but indirect:</strong> NVIDIA Vera Rubin</li>
+          <li><strong>Most worth monitoring on the research side:</strong> ID-LoRA</li>
+        </ul>
+
+        <h2>Follow-up suggestions</h2>
+        <ul>
+          <li>Go deeper on controllable restoration / enhancement systems like SparkVSR.</li>
+          <li>In future runs, prioritize more creator-facing items from the roundup when available.</li>
+          <li>Keep infrastructure items short unless they clearly affect product constraints.</li>
+          <li>Use images sparingly: only when they explain something or make the report easier to scan.</li>
+        </ul>
+
+        <div class="divider"></div>
+
+        <h2>Source appendix</h2>
+        <p class="small">Seed post: <a href="https://x.com/aisearchio/status/2035559105344278593">https://x.com/aisearchio/status/2035559105344278593</a></p>
+        <p class="small">Google Stitch: <a href="https://stitch.withgoogle.com/">https://stitch.withgoogle.com/</a></p>
+        <p class="small">MiniMax M2.7: <a href="https://www.minimax.io/models/text/m27">https://www.minimax.io/models/text/m27</a></p>
+        <p class="small">SparkVSR GitHub: <a href="https://github.com/taco-group/SparkVSR/tree/main">https://github.com/taco-group/SparkVSR/tree/main</a></p>
+        <p class="small">SparkVSR project page: <a href="https://sparkvsr.github.io/">https://sparkvsr.github.io/</a></p>
+        <p class="small">SparkVSR paper: <a href="https://arxiv.org/abs/2603.16864">https://arxiv.org/abs/2603.16864</a></p>
+        <p class="small">ID-LoRA paper: <a href="https://arxiv.org/html/2602.20727v1">https://arxiv.org/html/2602.20727v1</a></p>
+        <p class="small">NVIDIA Vera Rubin: <a href="https://www.nvidia.com/en-us/data-center/technologies/rubin/">https://www.nvidia.com/en-us/data-center/technologies/rubin/</a></p>
+
+        <div class="footer">Generated by Heph · cleaner markdown-like editorial format test</div>
+      </div>
+    </article>
+  </div>
+</body>
+</html>
