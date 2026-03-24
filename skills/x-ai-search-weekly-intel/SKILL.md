@@ -10,15 +10,17 @@ Use this skill to turn a recent multi-tool AI Search post into a structured rese
 ## Core workflow
 
 1. Read `references/workflow.md` and follow it in order.
-2. Use visible browser mode only if login/session issues require it; otherwise prefer headless.
-3. Treat the X post as the discovery seed, not the final source of truth.
-4. Research each named tool/model on:
+2. Read `references/design-direction.md` before designing the report.
+3. Use visible browser mode only if login/session issues require it; otherwise prefer headless.
+4. Treat the X post as the discovery seed, not the final source of truth.
+5. Research each named tool/model on:
    - official product/company pages
    - GitHub, if relevant
    - arXiv, if relevant
-5. Group items by similar user problem or workflow role, not by hype.
-6. Write a report that is readable by a non-terminal human.
-7. Render the final report to PDF with `scripts/render_report_pdf.py`.
+6. Group items by similar user problem or workflow role, not by hype.
+7. Write a report that is readable by a non-terminal human.
+8. Prefer a designed HTML/CSS report with images/cards/callouts over a plain markdown export.
+9. Render the final report to PDF with `scripts/render_report_pdf.py`.
 
 ## Output requirements
 
