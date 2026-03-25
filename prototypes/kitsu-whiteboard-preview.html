@@ -1,0 +1,763 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Xanadu Studio Tool — Kitsu + Whiteboard Preview</title>
+  <style>
+    :root {
+      --bg: #030304;
+      --surface: #0f1115;
+      --surface-2: #161a20;
+      --text: #ffffff;
+      --muted: #94a3b8;
+      --border: rgba(255,255,255,.08);
+      --border-strong: rgba(247,147,26,.32);
+      --primary: #f7931a;
+      --secondary: #ea580c;
+      --tertiary: #ffd600;
+      --glass: rgba(15,17,21,.82);
+      --glow: 0 0 24px -6px rgba(234,88,12,.42);
+      --card: 18px;
+      --pill: 999px;
+      --heading: "Space Grotesk", Inter, system-ui, sans-serif;
+      --body: Inter, system-ui, sans-serif;
+      --mono: "JetBrains Mono", ui-monospace, monospace;
+    }
+
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background:
+        radial-gradient(circle at 82% 14%, rgba(247,147,26,.11), transparent 26%),
+        radial-gradient(circle at 15% 78%, rgba(234,88,12,.08), transparent 24%),
+        var(--bg);
+      color: var(--text);
+      font-family: var(--body);
+    }
+    body {
+      overflow-x: hidden;
+    }
+    .grid-overlay {
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+      background-size: 48px 48px;
+      mask-image: radial-gradient(circle at center, black 45%, transparent 95%);
+      pointer-events: none;
+      opacity: .75;
+    }
+    .shell {
+      position: relative;
+      z-index: 1;
+      max-width: 1600px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    .topbar {
+      display: grid;
+      grid-template-columns: 180px 1fr auto auto;
+      gap: 16px;
+      align-items: center;
+      padding: 14px 16px;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      background: rgba(7,8,11,.78);
+      backdrop-filter: blur(16px);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.03);
+    }
+    .brand {
+      font-family: var(--heading);
+      font-weight: 700;
+      letter-spacing: .06em;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .brand-badge {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--secondary), var(--primary));
+      box-shadow: var(--glow);
+      color: #050608;
+      font-weight: 800;
+    }
+    .context {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .chip {
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.03);
+      color: var(--muted);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 12px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .chip strong { color: var(--text); font-weight: 600; }
+    .credits {
+      text-align: right;
+    }
+    .credits .label {
+      font-size: 11px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .12em;
+    }
+    .credits .value {
+      font-family: var(--heading);
+      font-size: 28px;
+      color: var(--tertiary);
+      text-shadow: 0 0 18px rgba(255,214,0,.18);
+    }
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      border: 1px solid rgba(247,147,26,.22);
+      background: linear-gradient(135deg, var(--secondary), var(--primary));
+      color: #060607;
+      font-weight: 700;
+      box-shadow: var(--glow);
+    }
+
+    .hero {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 22px;
+      align-items: end;
+    }
+    .hero-copy {
+      padding: 12px 4px;
+    }
+    .eyebrow {
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: .24em;
+      font-size: 11px;
+      margin-bottom: 14px;
+    }
+    h1 {
+      margin: 0;
+      font-family: var(--heading);
+      font-size: clamp(3rem, 7vw, 6rem);
+      line-height: .92;
+      letter-spacing: -.04em;
+      max-width: 860px;
+    }
+    h1 em {
+      font-style: normal;
+      color: var(--primary);
+      text-shadow: 0 0 28px rgba(247,147,26,.2);
+    }
+    .hero-copy p {
+      max-width: 760px;
+      color: #d4d9e4;
+      line-height: 1.7;
+      font-size: 16px;
+      margin-top: 22px;
+    }
+    .hero-notes {
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      background: linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.015));
+      padding: 20px;
+      box-shadow: var(--glow);
+    }
+    .hero-notes h3 {
+      margin: 0 0 14px;
+      font-family: var(--heading);
+      font-size: 20px;
+    }
+    .hero-notes ul {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .main {
+      margin-top: 28px;
+      display: grid;
+      grid-template-columns: 72px minmax(380px, 420px) 1fr 360px;
+      gap: 18px;
+      align-items: start;
+    }
+
+    .rail,
+    .panel,
+    .workspace,
+    .asset-browser,
+    .whiteboard,
+    .flow {
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      background: var(--glass);
+      backdrop-filter: blur(18px);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.02);
+    }
+
+    .rail {
+      padding: 16px 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      position: sticky;
+      top: 20px;
+    }
+    .rail .logo {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #13161d, #202633);
+      border: 1px solid rgba(247,147,26,.4);
+      display: grid;
+      place-items: center;
+      font-family: var(--heading);
+      font-weight: 700;
+      color: var(--primary);
+      box-shadow: var(--glow);
+      margin-bottom: 6px;
+    }
+    .rail button {
+      width: 46px;
+      height: 46px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: rgba(255,255,255,.03);
+      color: var(--muted);
+      font-size: 18px;
+    }
+    .rail button.active {
+      color: var(--primary);
+      border-color: rgba(247,147,26,.4);
+      background: rgba(247,147,26,.08);
+      box-shadow: var(--glow);
+    }
+
+    .panel {
+      padding: 18px;
+      position: sticky;
+      top: 20px;
+    }
+    .section-label {
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .18em;
+      font-size: 11px;
+      margin-bottom: 8px;
+    }
+    .panel h2,
+    .workspace h2,
+    .asset-browser h2,
+    .whiteboard h2,
+    .flow h2 {
+      font-family: var(--heading);
+      margin: 0 0 14px;
+      font-size: 22px;
+      line-height: 1.05;
+    }
+    .model-card,
+    .context-card,
+    .shot-card,
+    .asset-card,
+    .board-card,
+    .flow-node {
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: rgba(255,255,255,.025);
+    }
+    .model-card {
+      padding: 14px;
+      display: grid;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .row { display: flex; justify-content: space-between; gap: 12px; align-items: center; }
+    .model-name { font-family: var(--heading); font-size: 18px; }
+    .subtle { color: var(--muted); font-size: 13px; line-height: 1.5; }
+    .token {
+      border-radius: 999px;
+      border: 1px solid rgba(247,147,26,.3);
+      color: var(--primary);
+      font-size: 11px;
+      padding: 6px 10px;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+    }
+    .prompt {
+      min-height: 136px;
+      border: 1px solid rgba(255,255,255,.06);
+      border-radius: 16px;
+      background: rgba(0,0,0,.2);
+      padding: 14px;
+      color: #dce1ea;
+      line-height: 1.65;
+      font-size: 14px;
+    }
+    .tools { display: grid; grid-template-columns: repeat(2,1fr); gap: 10px; margin-top: 14px; }
+    .tool-chip {
+      padding: 12px 12px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.03);
+      color: #dce1ea;
+      font-size: 13px;
+    }
+    .generate {
+      margin-top: 14px;
+      width: 100%;
+      border: none;
+      border-radius: 999px;
+      padding: 14px 16px;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--secondary), var(--primary));
+      color: #050608;
+      box-shadow: var(--glow);
+    }
+
+    .workspace {
+      padding: 18px;
+    }
+    .workspace-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+    .workspace-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .shot-card {
+      overflow: hidden;
+      min-height: 280px;
+      display: flex;
+      flex-direction: column;
+    }
+    .shot-thumb {
+      aspect-ratio: 4 / 3;
+      background:
+        linear-gradient(160deg, rgba(247,147,26,.22), transparent 48%),
+        linear-gradient(135deg, #0f1115, #242b3a 70%);
+      border-bottom: 1px solid var(--border);
+      position: relative;
+    }
+    .shot-thumb::after {
+      content: attr(data-shot);
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      font-size: 11px;
+      padding: 6px 8px;
+      border-radius: 999px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--primary);
+      background: rgba(0,0,0,.35);
+      border: 1px solid rgba(247,147,26,.28);
+    }
+    .shot-meta {
+      padding: 12px 14px 14px;
+      display: grid;
+      gap: 8px;
+    }
+    .shot-meta strong { font-family: var(--heading); font-size: 18px; }
+    .actions { display: flex; gap: 8px; flex-wrap: wrap; }
+    .mini-btn {
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.03);
+      color: #dce1ea;
+      padding: 8px 10px;
+      font-size: 12px;
+    }
+
+    .asset-browser {
+      padding: 18px;
+      position: sticky;
+      top: 20px;
+      display: grid;
+      gap: 14px;
+    }
+    .search {
+      width: 100%;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.025);
+      color: var(--text);
+      padding: 12px 14px;
+    }
+    .asset-group { display: grid; gap: 10px; }
+    .asset-head {
+      display: flex; justify-content: space-between; align-items: center;
+      color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .16em;
+    }
+    .asset-card {
+      display: grid;
+      grid-template-columns: 68px 1fr;
+      gap: 12px;
+      padding: 10px;
+      align-items: center;
+    }
+    .asset-thumb {
+      width: 68px; height: 68px; border-radius: 14px;
+      background: linear-gradient(135deg, #273449, #10141d 70%);
+      border: 1px solid rgba(255,255,255,.06);
+    }
+    .asset-title { font-weight: 700; }
+    .asset-tags { color: var(--muted); font-size: 12px; line-height: 1.45; }
+
+    .secondary-grid {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 18px;
+    }
+    .whiteboard,
+    .flow {
+      padding: 18px;
+    }
+    .board {
+      min-height: 460px;
+      border-radius: 18px;
+      border: 1px dashed rgba(255,255,255,.08);
+      background:
+        linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px),
+        rgba(0,0,0,.12);
+      background-size: 42px 42px;
+      position: relative;
+      overflow: hidden;
+    }
+    .board-card {
+      position: absolute;
+      width: 220px;
+      padding: 14px;
+      background: rgba(15,17,21,.94);
+      box-shadow: 0 12px 30px rgba(0,0,0,.25);
+    }
+    .board-card.orange { border-color: rgba(247,147,26,.35); box-shadow: var(--glow); }
+    .board-card small { color: var(--muted); text-transform: uppercase; letter-spacing: .14em; font-size: 10px; }
+    .board-card strong { display: block; margin-top: 8px; font-size: 15px; }
+    .thread {
+      margin-top: 10px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,.06);
+      color: var(--muted); font-size: 12px; line-height: 1.45;
+    }
+    .board-line {
+      position: absolute;
+      border-top: 1px dashed rgba(247,147,26,.28);
+      transform-origin: left center;
+      opacity: .9;
+    }
+
+    .flow-map {
+      display: grid;
+      gap: 12px;
+    }
+    .flow-node {
+      padding: 14px;
+      position: relative;
+    }
+    .flow-node strong {
+      display: block;
+      font-family: var(--heading);
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+    .arrow {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--primary);
+      font-size: 13px;
+      margin: 2px 0 4px 6px;
+    }
+    .legend {
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 1280px) {
+      .main { grid-template-columns: 72px 1fr; }
+      .asset-browser { grid-column: 1 / -1; position: relative; top: auto; }
+      .workspace { grid-column: 2 / -1; }
+    }
+    @media (max-width: 980px) {
+      .topbar, .hero, .secondary-grid { grid-template-columns: 1fr; }
+      .main { grid-template-columns: 1fr; }
+      .rail { position: relative; top: auto; flex-direction: row; justify-content: center; }
+      .panel, .workspace, .asset-browser { position: relative; top: auto; }
+      .workspace-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="grid-overlay"></div>
+  <div class="shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-badge">XS</div>
+        <div>
+          <div>Xanadu Studio</div>
+          <div class="subtle">creative operating layer</div>
+        </div>
+      </div>
+      <div class="context">
+        <div class="chip"><strong>Project</strong> Campaign Q1 / Kitsu synced</div>
+        <div class="chip"><strong>Attention</strong> SH010 needs alt motion pass</div>
+        <div class="chip"><strong>Active filter</strong> Shot 010</div>
+      </div>
+      <div class="credits">
+        <div class="label">credits</div>
+        <div class="value">142.8</div>
+      </div>
+      <div class="cta">Publish to Kitsu CDN</div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">Prototype preview / kitsu + whiteboard architecture</div>
+        <h1>Keep the <em>generation lab</em>, add project memory and collaborative review.</h1>
+        <p>
+          This prototype extends your Stitch generation UI without forcing the whole product into a giant infinite canvas. Kitsu stays the production backbone. The tool becomes a creative operating layer with three main surfaces: a strong generation panel, a reusable asset browser filtered by shot context, and a collaborative whiteboard linked to publishes and comments.
+        </p>
+      </div>
+      <aside class="hero-notes">
+        <h3>What this preview is testing</h3>
+        <ul>
+          <li>Kitsu provides project and shot context, but does not hard-lock the UI into rigid shot workspaces.</li>
+          <li>Shot number acts like a contextual filter for assets, versions, and things needing attention.</li>
+          <li>The generation experience still feels like the polished dark “lab” you explored in Stitch.</li>
+          <li>Collaboration lives in a spatial whiteboard instead of burying comments in side panels.</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="main">
+      <nav class="rail">
+        <div class="logo">XS</div>
+        <button class="active">🎬</button>
+        <button>🖼️</button>
+        <button>🎞️</button>
+        <button>🧰</button>
+        <button>💬</button>
+        <button>⚙️</button>
+      </nav>
+
+      <section class="panel">
+        <div class="section-label">Generation lab</div>
+        <h2>Stitch-inspired prompt + model control</h2>
+        <div class="model-card">
+          <div class="row">
+            <div>
+              <div class="model-name">Flux 1.1 Pro Ultra</div>
+              <div class="subtle">Fal · cinematic image mode · cost-aware</div>
+            </div>
+            <div class="token">shot 010</div>
+          </div>
+          <div class="context-card" style="padding:12px 14px;">
+            <div class="subtle">Prompt</div>
+            <div class="prompt">A lone traveler standing on the edge of a neon-drenched skyscraper overlooking a sprawling cyberpunk metropolis at dusk. Cinematic frame. ARRI Alexa 65, 35mm, f/1.4. Pull orange highlights from project character board and preserve skyline continuity from SH009.</div>
+          </div>
+          <div class="row">
+            <div class="chip"><strong>Camera</strong> Alexa 65 / 35mm</div>
+            <div class="chip"><strong>Aspect</strong> 16:9 cinema</div>
+          </div>
+          <div class="row">
+            <div class="chip"><strong>Refs</strong> 3 active</div>
+            <div class="chip"><strong>Seed</strong> Auto</div>
+          </div>
+        </div>
+        <div class="tools">
+          <div class="tool-chip">Cinematographer on</div>
+          <div class="tool-chip">Keyframe reference</div>
+          <div class="tool-chip">Variation / branch</div>
+          <div class="tool-chip">Upscale / publish</div>
+        </div>
+        <button class="generate">Generate new version</button>
+      </section>
+
+      <section class="workspace">
+        <div class="workspace-top">
+          <div>
+            <div class="section-label">Versions in focus</div>
+            <h2>Current shot outputs with side-by-side exploration</h2>
+          </div>
+          <div class="chip"><strong>Kitsu context</strong> SH010 · Act 1 · needs director review</div>
+        </div>
+        <div class="workspace-grid">
+          <article class="shot-card">
+            <div class="shot-thumb" data-shot="Source shot"></div>
+            <div class="shot-meta">
+              <strong>Base generation</strong>
+              <div class="subtle">Pulled from latest approved prompt and character continuity references.</div>
+              <div class="actions">
+                <div class="mini-btn">Compare</div>
+                <div class="mini-btn">Branch</div>
+                <div class="mini-btn">Send to board</div>
+              </div>
+            </div>
+          </article>
+          <article class="shot-card">
+            <div class="shot-thumb" data-shot="Variant 02"></div>
+            <div class="shot-meta">
+              <strong>Lighting pass</strong>
+              <div class="subtle">Warmer edge lighting, cleaner skyline separation, tagged for whiteboard review.</div>
+              <div class="actions">
+                <div class="mini-btn">Promote</div>
+                <div class="mini-btn">Annotate</div>
+                <div class="mini-btn">Publish</div>
+              </div>
+            </div>
+          </article>
+          <article class="shot-card">
+            <div class="shot-thumb" data-shot="Variant 03"></div>
+            <div class="shot-meta">
+              <strong>Motion-ready comp</strong>
+              <div class="subtle">Prepared to hand off into video generation or motion interpolation pipeline.</div>
+              <div class="actions">
+                <div class="mini-btn">Pin to project</div>
+                <div class="mini-btn">Move to board</div>
+                <div class="mini-btn">Send to edit</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <aside class="asset-browser">
+        <div class="section-label">Asset browser</div>
+        <h2>Project memory, filtered by shot context</h2>
+        <input class="search" value="shot:010 OR starred:true" />
+        <div class="asset-group">
+          <div class="asset-head"><span>Starred for project</span><span>Top shelf</span></div>
+          <div class="asset-card">
+            <div class="asset-thumb"></div>
+            <div>
+              <div class="asset-title">Lead Character / Canon Ref</div>
+              <div class="asset-tags">character · used in 5 shots · starred from SH004</div>
+            </div>
+          </div>
+          <div class="asset-card">
+            <div class="asset-thumb"></div>
+            <div>
+              <div class="asset-title">Night Skyline / Approved Location</div>
+              <div class="asset-tags">location · linked to SH009 + SH010</div>
+            </div>
+          </div>
+        </div>
+        <div class="asset-group">
+          <div class="asset-head"><span>Context brought forward</span><span>Shot 010</span></div>
+          <div class="asset-card">
+            <div class="asset-thumb"></div>
+            <div>
+              <div class="asset-title">Continuity Match / Shoulder Angle</div>
+              <div class="asset-tags">from SH009 · attention surfacing · director tagged</div>
+            </div>
+          </div>
+          <div class="asset-card">
+            <div class="asset-thumb"></div>
+            <div>
+              <div class="asset-title">Orange Rain FX Plate</div>
+              <div class="asset-tags">vfx asset · reusable overlay · linked to CDN</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="secondary-grid">
+      <section class="whiteboard">
+        <div class="section-label">Collaborative whiteboard</div>
+        <h2>Spatial review for comments, publishes, and shot movement</h2>
+        <div class="board">
+          <div class="board-line" style="left: 180px; top: 170px; width: 200px; transform: rotate(-8deg);"></div>
+          <div class="board-line" style="left: 410px; top: 240px; width: 220px; transform: rotate(12deg);"></div>
+
+          <div class="board-card orange" style="left: 26px; top: 36px;">
+            <small>shot 010 · candidate</small>
+            <strong>Version 03 / motion-ready</strong>
+            <div class="thread">Lawrence: strongest silhouette, keep this as publish candidate.</div>
+          </div>
+
+          <div class="board-card" style="left: 310px; top: 120px;">
+            <small>publish lane</small>
+            <strong>Approved for edit handoff</strong>
+            <div class="thread">Auto-linked to Kitsu publish + CDN preview.</div>
+          </div>
+
+          <div class="board-card" style="left: 590px; top: 250px;">
+            <small>notes</small>
+            <strong>Need alt with less orange spill</strong>
+            <div class="thread">Rudransh: try cooler rain contrast for next pass.</div>
+          </div>
+
+          <div class="board-card" style="left: 90px; top: 280px; width: 250px;">
+            <small>shot grouping</small>
+            <strong>SH009 → SH010 continuity cluster</strong>
+            <div class="thread">Drag versions together to compare transitions and maintain skyline continuity.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="flow">
+        <div class="section-label">Flowchart</div>
+        <h2>How the product layers fit together</h2>
+        <div class="flow-map">
+          <div class="flow-node">
+            <strong>Kitsu</strong>
+            <div class="subtle">Project structure, shot metadata, statuses, publish truth.</div>
+          </div>
+          <div class="arrow">↓ provides shot number, assignments, statuses</div>
+          <div class="flow-node">
+            <strong>Unified generation workspace</strong>
+            <div class="subtle">Prompting, generation, edits, version creation, publish actions.</div>
+          </div>
+          <div class="arrow">↘ saves outputs / promotes key assets ↙</div>
+          <div class="flow-node">
+            <strong>Asset browser</strong>
+            <div class="subtle">Reusable characters, locations, props, styles, shot-filtered references, project-starred memory.</div>
+          </div>
+          <div class="arrow">↔ drag to whiteboard / attach comments / publish candidates</div>
+          <div class="flow-node">
+            <strong>Collaborative whiteboard</strong>
+            <div class="subtle">Spatial review, comments, comparisons, organize publishes, visual discussion.</div>
+          </div>
+          <div class="arrow">↓ publish selected results</div>
+          <div class="flow-node">
+            <strong>Kitsu CDN + publish state</strong>
+            <div class="subtle">Approved outputs and media references stay linked back to production truth.</div>
+          </div>
+        </div>
+        <div class="legend">
+          <strong style="color:var(--text)">Prototype intent:</strong> keep the polished Stitch-like generation panel, but move project coordination into a stronger asset browser + whiteboard system instead of a giant global infinite canvas.
+        </div>
+      </section>
+    </section>
+  </div>
+</body>
+</html>
