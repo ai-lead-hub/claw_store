@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Filmmaking Frontier Deep Pass — 2026-03-25</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F9F8F6;
+      --paper: #F9F8F6;
+      --muted-bg: #EBE5DE;
+      --ink: #1A1A1A;
+      --muted: #6C6863;
+      --gold: #D4AF37;
+      --line: rgba(26,26,26,.15);
+      --line-soft: rgba(26,26,26,.08);
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--ink);
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    body {
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .grain {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: .02;
+      background-image: radial-gradient(#000 0.6px, transparent 0.6px);
+      background-size: 8px 8px;
+    }
+    .page {
+      max-width: 980px;
+      margin: 0 auto;
+      min-height: 100vh;
+      position: relative;
+      background: var(--paper);
+    }
+    .wrap {
+      padding: 20mm 18mm 22mm;
+    }
+    .overline, .eyebrow, .kicker, .meta, .mini {
+      text-transform: uppercase;
+      letter-spacing: .24em;
+    }
+    .overline {
+      color: var(--muted);
+      font-size: 11px;
+      margin-bottom: 18px;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 28px;
+      align-items: end;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 22px;
+    }
+    h1, h2, h3, h4 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-weight: 500;
+      margin: 0;
+      break-after: avoid;
+      page-break-after: avoid;
+    }
+    h1 {
+      font-size: 62px;
+      line-height: .92;
+      letter-spacing: -.04em;
+      max-width: 620px;
+    }
+    .dek {
+      margin-top: 18px;
+      max-width: 620px;
+      font-size: 18px;
+      line-height: 1.72;
+      color: #282725;
+    }
+    .hero-side {
+      border-left: 1px solid var(--line);
+      padding-left: 22px;
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      gap: 12px;
+    }
+    .hero-side p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--muted);
+    }
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 18px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line-soft);
+      color: var(--muted);
+      font-size: 11px;
+    }
+    .hero-image {
+      margin-top: 24px;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    .hero-image img,
+    .visual img {
+      width: 100%;
+      display: block;
+      border: 1px solid rgba(26,26,26,.10);
+      box-shadow: 0 12px 32px rgba(26,26,26,.06);
+    }
+    .caption {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 11px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .section {
+      margin-top: 42px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    .section-head {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 18px;
+      align-items: baseline;
+      margin-bottom: 14px;
+    }
+    .eyebrow {
+      color: var(--muted);
+      font-size: 10px;
+      padding-top: 8px;
+    }
+    h2 {
+      font-size: 38px;
+      line-height: 1;
+    }
+    .section-intro {
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.72;
+      margin: 0 0 8px 138px;
+    }
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 16px 22px;
+      margin-left: 138px;
+      margin-top: 18px;
+    }
+    .summary-item {
+      padding-top: 12px;
+      border-top: 1px solid var(--line-soft);
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    .summary-item h3 {
+      font-size: 24px;
+      line-height: 1.08;
+      margin-bottom: 8px;
+    }
+    .kicker {
+      font-size: 10px;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+    p {
+      margin: 10px 0;
+      font-size: 15px;
+      line-height: 1.74;
+      color: #232220;
+    }
+    ul {
+      margin: 10px 0 0 18px;
+      padding: 0;
+    }
+    li {
+      margin: 6px 0;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    .callout {
+      margin: 14px 0 8px;
+      padding: 14px 0 0 14px;
+      border-left: 1px solid rgba(212,175,55,.6);
+    }
+    .band {
+      background: var(--muted-bg);
+      padding: 22px;
+      margin-top: 20px;
+      border: 1px solid rgba(26,26,26,.08);
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    .band h3 {
+      font-size: 28px;
+      line-height: 1.08;
+      margin-bottom: 10px;
+    }
+    .entry {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 24px;
+      padding: 22px 0;
+      border-top: 1px solid var(--line-soft);
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    .entry:first-of-type { border-top: none; }
+    .visual { align-self: start; }
+    .source {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.7;
+    }
+    a {
+      color: var(--ink);
+      text-decoration-color: rgba(212,175,55,.95);
+      text-underline-offset: 3px;
+    }
+    .three-col {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+      gap: 18px;
+      margin-left: 138px;
+      margin-top: 18px;
+    }
+    .mini-card {
+      padding-top: 12px;
+      border-top: 1px solid var(--line-soft);
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    .mini-card h4 {
+      font-size: 21px;
+      line-height: 1.12;
+      margin-bottom: 8px;
+    }
+    .footer {
+      margin-top: 42px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    p, li, .band, .summary-item, .mini-card, .visual, .callout { orphans: 3; widows: 3; }
+    @page { size: A4; margin: 0; }
+    @media print {
+      html, body, .page { background: var(--bg) !important; }
+    }
+    @media (max-width: 860px) {
+      .hero-grid, .entry, .section-head, .three-col, .summary-grid { grid-template-columns: 1fr; }
+      .section-intro, .summary-grid, .three-col { margin-left: 0; }
+      .hero-side { border-left: none; padding-left: 0; border-top: 1px solid var(--line); padding-top: 18px; }
+      h1 { font-size: 48px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="grain"></div>
+  <main class="page">
+    <div class="wrap">
+      <div class="overline">Frontier research / deep pass / AI filmmaking</div>
+      <section class="hero-grid">
+        <div>
+          <h1>The video stack is becoming a <em>workflow</em> business, not just a model business</h1>
+          <div class="dek">
+            A full-source deep pass across frontier labs, creator tools, open video systems, and foreign-language signals. The strongest pattern is not merely better clips. It is stronger control, more complete audiovisual output, and the rise of routing layers that sit above the models.
+          </div>
+          <div class="meta-row meta">
+            <div>Date / 2026-03-25</div>
+            <div>Scope / deep pass</div>
+            <div>Lens / AI filmmaking startup</div>
+            <div>Method / official pages, arXiv, GitHub</div>
+          </div>
+        </div>
+        <aside class="hero-side">
+          <p><strong>Bottom line:</strong> the durable edge is moving toward identity persistence, editability, audio completeness, and smart model routing.</p>
+          <p><strong>Most actionable:</strong> benchmark against Runway for control, watch Adobe as the orchestration shell, and use FramePack + Wan + Hunyuan + ComfyUI as the serious open experimentation stack.</p>
+        </aside>
+      </section>
+
+      <figure class="hero-image">
+        <img src="assets/2026-03-25-ai-filmmaking-frontier-deep-pass/runway-gen45-cropped.jpg" alt="Runway Gen-4.5 visual" />
+        <figcaption class="caption">Runway’s Gen-4.5 launch image anchors the strongest direct quality-plus-control signal in this pass.</figcaption>
+      </figure>
+
+      <section class="section">
+        <div class="section-head">
+          <div class="eyebrow">Executive<br>summary</div>
+          <h2>What matters right now</h2>
+        </div>
+        <p class="section-intro">The important shift is upward in the stack. Labs are still improving generation quality, but the more decisive competitive moves are happening in control surfaces, audiovisual completeness, and the workflow shells that let creators steer, remix, and preserve identity across shots.</p>
+        <div class="summary-grid">
+          <article class="summary-item">
+            <div class="kicker">Highest-priority product signal</div>
+            <h3>Runway still sets the bar for controllable cinematic generation</h3>
+            <p>Gen-4.5 is the clearest “usable now” signal for motion quality, prompt adherence, temporal consistency, and professional control expectations.</p>
+          </article>
+          <article class="summary-item">
+            <div class="kicker">Category shift</div>
+            <h3>Video is becoming audiovisual by default</h3>
+            <p>Google Veo and OpenAI Sora both make sound part of the core product story. Silent output increasingly looks incomplete unless it wins elsewhere.</p>
+          </article>
+          <article class="summary-item">
+            <div class="kicker">Strategic shell</div>
+            <h3>Adobe is positioning itself above the model wars</h3>
+            <p>Firefly is being sold as a brand-safe, camera-aware, workflow-integrated hub that can route across multiple video engines.</p>
+          </article>
+          <article class="summary-item">
+            <div class="kicker">Open-stack leverage</div>
+            <h3>OSS video is operational enough to matter</h3>
+            <p>FramePack, Wan2.1/VACE, HunyuanVideo, and ComfyUI together form a credible experimentation environment for long-form consistency, editing, and local iteration.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <div class="eyebrow">Frontier<br>labs</div>
+          <h2>The control race is more important than the benchmark race</h2>
+        </div>
+
+        <article class="entry">
+          <div>
+            <div class="kicker">Runway / video control</div>
+            <h3>Gen-4.5 looks like the most filmmaker-relevant quality jump in this source set</h3>
+            <p>Runway’s pitch is unusually aligned with real creative pain points: motion quality, prompt adherence, temporal consistency, physical accuracy, expressive characters, and continuity with existing control modes such as image-to-video, keyframes, and video-to-video.</p>
+            <div class="callout">
+              <p><strong>Why it matters:</strong> this is the strongest direct signal that the premium end of AI video is converging on “revision-friendly cinematic control,” not just one-off wow shots.</p>
+            </div>
+            <p>For an AI filmmaking startup, Runway is still the cleanest benchmark for what a credible professional product surface should feel like.</p>
+            <div class="source">Source: <a href="https://runwayml.com/research/introducing-runway-gen-4.5">Runway — Introducing Runway Gen-4.5</a> / Dec 1, 2025</div>
+          </div>
+          <figure class="visual">
+            <img src="assets/2026-03-25-ai-filmmaking-frontier-deep-pass/runway-gen45-cropped.jpg" alt="Runway Gen-4.5" />
+            <figcaption class="caption">Quality matters, but control is the real story.</figcaption>
+          </figure>
+        </article>
+
+        <article class="entry">
+          <div>
+            <div class="kicker">Google DeepMind / audiovisual generation</div>
+            <h3>Veo raises the bar by treating audio as part of the scene, not an afterthought</h3>
+            <p>The current Veo page emphasizes native sound effects, ambience, dialogue, improved prompt following, and stronger realism/physics. That turns the competitive question from “who has the best-looking clip?” into “who gets creators closer to a finished scene in one pass?”</p>
+            <div class="callout">
+              <p><strong>Why it matters:</strong> audiovisual generation changes the economics of previs, concept trailers, short-form storytelling, and ad ideation because it removes finishing steps.</p>
+            </div>
+            <p>Even if access is still constrained, the product direction is clear. Audio is migrating into the baseline expectation layer.</p>
+            <div class="source">Source: <a href="https://deepmind.google/models/veo/">Google DeepMind — Veo</a> / accessed 2026-03-25</div>
+          </div>
+          <div>
+            <div class="band">
+              <h3>OpenAI Sora is quietly teaching users to expect remixable video</h3>
+              <p>The Sora app currently foregrounds prompt-to-video, image upload, character insertion, remixing, and automatic music / sound effects / dialogue.</p>
+              <p>That framing matters because it is not pure generation anymore. It is lightweight scene transformation, which feels much closer to editing semantics.</p>
+              <div class="source">Source: <a href="https://openai.com/sora/">OpenAI — Sora</a> / accessed 2026-03-25</div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <div class="eyebrow">Creator<br>tools</div>
+          <h2>The interesting products are turning into orchestration layers</h2>
+        </div>
+
+        <article class="entry">
+          <div>
+            <div class="kicker">Adobe / workflow shell</div>
+            <h3>Firefly is being positioned as the safe, controllable layer above multiple video models</h3>
+            <p>Adobe’s video generator page matters because it is not only about Adobe’s own model. It explicitly sells camera-aware generation, commercially safe output, integration with adjacent audio and editing tools, and partner-model access including Veo, Sora, and Pika.</p>
+            <div class="callout">
+              <p><strong>Why it matters:</strong> Adobe may capture practical usage not by owning every best model, but by owning the trusted workflow shell where teams do the work.</p>
+            </div>
+            <p>This is the clearest strategic reminder in the set that the monetizable layer may sit above the frontier labs.</p>
+            <div class="source">Source: <a href="https://www.adobe.com/products/firefly/features/ai-video-generator.html">Adobe — Firefly AI Video Generator</a> / accessed 2026-03-25</div>
+          </div>
+          <div>
+            <div class="band">
+              <h3>Implication</h3>
+              <p>If Adobe becomes the default orchestration shell, standalone products need a very sharp answer to why they exist: deeper control, a better identity layer, faster iteration, lower cost, or a more filmmaker-native UX.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div>
+            <div class="kicker">Higgsfield / taste + routing</div>
+            <h3>Higgsfield is becoming a cinematic identity layer with model-routing instincts</h3>
+            <p>Its accessible surface mixes Cinema Studio 2.5, Soul Cinema, Soul ID, Soul Cast, editing tools, and visible paths into external engines such as Kling, MiniMax, Veo preview, and others. The blog copy adds a useful phrase: cinematic-grade visuals built with creative professionals and stronger character consistency when paired with Soul ID.</p>
+            <div class="callout">
+              <p><strong>Why it matters:</strong> Higgsfield is less interesting as a single model vendor than as a taste-driven operating system for creators who want style, identity continuity, and access to the right engine in one place.</p>
+            </div>
+            <div class="source">Sources: <a href="https://higgsfield.ai/">Higgsfield homepage</a> and <a href="https://higgsfield.ai/blog">Higgsfield blog</a> / accessed 2026-03-25</div>
+          </div>
+          <figure class="visual">
+            <img src="assets/2026-03-25-ai-filmmaking-frontier-deep-pass/higgsfield-blog-cropped.jpg" alt="Higgsfield blog visual" />
+            <figcaption class="caption">Taste, identity, and routing are converging into one product layer.</figcaption>
+          </figure>
+        </article>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <div class="eyebrow">Research +<br>open stack</div>
+          <h2>The open ecosystem is now useful enough to shape product thinking</h2>
+        </div>
+
+        <article class="entry">
+          <div>
+            <div class="kicker">FramePack / long-form consistency</div>
+            <h3>One of the most implementation-relevant video papers in the set</h3>
+            <p>FramePack proposes context packing for next-frame prediction so inference cost remains invariant to video length, then adds explicit anti-drift mechanisms to fight long-horizon degradation. The accompanying repo is unusually practical and desktop-oriented.</p>
+            <p>This is not just academically interesting. It points straight at one of the hardest filmmaking bottlenecks: holding onto continuity as clips get longer.</p>
+            <div class="source">Sources: <a href="https://github.com/lllyasviel/FramePack">GitHub</a> / <a href="https://arxiv.org/abs/2504.12626">arXiv</a></div>
+          </div>
+          <figure class="visual">
+            <img src="assets/2026-03-25-ai-filmmaking-frontier-deep-pass/framepack-og-cropped.jpg" alt="FramePack GitHub visual" />
+            <figcaption class="caption">Open-source video is getting much more operational.</figcaption>
+          </figure>
+        </article>
+
+        <article class="entry">
+          <div>
+            <div class="kicker">Wan / foreign-language signal</div>
+            <h3>Wan2.1 plus VACE is one of the strongest Chinese open-video signals to track closely</h3>
+            <p>Wan2.1 spans text-to-video, image-to-video, video editing, text-to-image, video-to-audio, and smaller variants that can run on consumer hardware. VACE pushes in an even more important direction: unifying creation and editing tasks behind one conditioning interface.</p>
+            <div class="callout">
+              <p><strong>Why it matters:</strong> creators do not think in isolated tabs like T2V vs I2V vs masked edit. A unified surface is closer to how real workflows behave.</p>
+            </div>
+            <div class="source">Sources: <a href="https://github.com/Wan-Video/Wan2.1">Wan2.1 GitHub</a>, <a href="https://arxiv.org/abs/2503.20314">Wan report</a>, <a href="https://arxiv.org/abs/2503.07598">VACE paper</a></div>
+          </div>
+          <figure class="visual">
+            <img src="assets/2026-03-25-ai-filmmaking-frontier-deep-pass/wan-og-cropped.jpg" alt="Wan GitHub visual" />
+            <figcaption class="caption">Foreign-language watch signals are strongest when they carry real OSS leverage.</figcaption>
+          </figure>
+        </article>
+
+        <article class="entry">
+          <div>
+            <div class="kicker">Hunyuan + ComfyUI / ecosystem compounding</div>
+            <h3>HunyuanVideo and ComfyUI together show where advanced experimentation actually happens</h3>
+            <p>Hunyuan’s repo is not just a base model release. It points to I2V, avatar animation, customization branches, diffusers integration, and community wrappers. ComfyUI remains the obvious control plane where those pieces become testable workflows instead of static repo bookmarks.</p>
+            <p>For startup research, this matters because it shortens the path from paper signal to practical experiment.</p>
+            <div class="source">Sources: <a href="https://github.com/Tencent-Hunyuan/HunyuanVideo">HunyuanVideo</a> / <a href="https://www.comfy.org/download">ComfyUI</a></div>
+          </div>
+          <figure class="visual">
+            <img src="assets/2026-03-25-ai-filmmaking-frontier-deep-pass/comfy-og-cropped.jpg" alt="ComfyUI visual" />
+            <figcaption class="caption">ComfyUI remains the fastest bridge from frontier release to creator workflow.</figcaption>
+          </figure>
+        </article>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <div class="eyebrow">Build / test</div>
+          <h2>What to do with this</h2>
+        </div>
+        <div class="three-col">
+          <article class="mini-card">
+            <div class="kicker">Opportunity</div>
+            <h4>Own cross-shot memory</h4>
+            <p>The market still lacks a genuinely dependable identity and scene-memory layer across shots, revisions, and model handoffs.</p>
+          </article>
+          <article class="mini-card">
+            <div class="kicker">Experiment</div>
+            <h4>Run a long-form consistency bakeoff</h4>
+            <p>Compare Runway against FramePack, Wan, and Hunyuan workflows on the exact continuity failures that matter in narrative sequences.</p>
+          </article>
+          <article class="mini-card">
+            <div class="kicker">Threat</div>
+            <h4>Do not ignore Adobe</h4>
+            <p>The biggest competitive risk may be the workflow shell, not a single model vendor. Adobe is moving directly into that position.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <div class="eyebrow">Watchlist</div>
+          <h2>Link-only items kept in view</h2>
+        </div>
+        <p class="section-intro">These remain strategically relevant, but the accessible official material today was too thin or too stale to justify the same expansion budget.</p>
+        <div class="summary-grid">
+          <article class="summary-item">
+            <h3>Luma Dream Machine</h3>
+            <p>Still relevant for the “creative partner” framing.</p>
+            <div class="source"><a href="https://lumalabs.ai/dream-machine">lumalabs.ai/dream-machine</a></div>
+          </article>
+          <article class="summary-item">
+            <h3>Kling AI</h3>
+            <p>Important foreign-language watch, but today’s accessible global surface lacked enough specifics for deeper expansion.</p>
+            <div class="source"><a href="https://klingai.com/global/">klingai.com/global</a></div>
+          </article>
+          <article class="summary-item">
+            <h3>Pika</h3>
+            <p>Still watch-worthy, but the official pages accessible today did not surface a stronger fresh signal than the leaders above.</p>
+            <div class="source"><a href="https://pika.art/">pika.art</a></div>
+          </article>
+        </div>
+      </section>
+
+      <div class="footer">Heph / AI filmmaking frontier deep pass / official sources, arXiv, GitHub</div>
+    </div>
+  </main>
+</body>
+</html>
