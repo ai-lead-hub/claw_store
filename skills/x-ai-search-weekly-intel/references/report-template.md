@@ -29,6 +29,9 @@ Seed post: <X post URL>
 
 - Follow-up items to revisit next week
 
-## Source appendix
+## Source appendix / sanity check
+
+List the sources actually checked during the run so the reader can verify coverage.
+Prefer placing this as the last section / last page in the PDF export.
 
 - <item> — <link 1> — <link 2> — <link 3>

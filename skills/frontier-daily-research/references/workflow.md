@@ -45,4 +45,14 @@ Promote only strong items into durable folders.
 
 ## 6. Prepare for synthesis
 
+Before drafting a user-facing report:
+- inspect the previous report if one exists
+- remove items that were already covered unless there is a fresh material update
+- keep the final report focused on deltas, not repeated landscape context
+
+In the final report:
+- include only net-new updates or clearly changed statuses
+- end with a sanity-check source list showing what sources were checked
+- keep that source list on the last page/last section where possible
+
 Leave enough structure that a later report generator can read the daily file and assemble a more polished summary.

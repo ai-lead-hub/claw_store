@@ -48,6 +48,12 @@ Prefer:
 The daily file is a research inbox, not a polished essay.
 Keep entries compact and useful.
 
+When generating a user-facing report from ongoing research:
+- compare against the previous report when available
+- omit items already meaningfully covered unless there is a real new development
+- bias toward net-new updates rather than repeating background context
+- add a final sanity-check section listing the sources checked
+
 ## Promotion discipline
 
 Only promote when an item is likely to matter again:

@@ -73,15 +73,18 @@ Do not force a category if the batch suggests a better grouping.
 
 ## Step 5 — Write the report
 
+Before writing, compare against the previous relevant report if available.
+If an item was already meaningfully covered, omit it unless there is a real new development worth reporting.
+
 Use this structure:
 
 1. Title
 2. Seed post
 3. Executive summary
-4. Grouped findings
+4. Grouped findings (net-new / changed items only)
 5. What matters most
 6. Watch list / follow-ups
-7. Source links appendix
+7. Source links appendix / sanity-check list of sources checked
 
 Per item include:
 - name
