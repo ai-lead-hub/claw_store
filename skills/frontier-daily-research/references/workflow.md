@@ -1,14 +1,30 @@
 # Daily workflow
 
-## 1. Collect
+## 1. Multi-source research per entity
 
-Look across the defined watch scope and gather candidate items for the day.
+For every entity in the watch scope, complete all of the following before marking it researched:
 
-Use source quality order when possible:
-1. official page or launch post
-2. official docs / release notes
-3. GitHub / arXiv / project page
-4. credible creator or community amplification
+### Tier 1 — Official
+- Blog posts, product pages, press releases
+- GitHub / arXiv / official documentation
+- Official social media accounts (X, YouTube channel)
+
+### Tier 2 — Video coverage
+- YouTube: search by entity name, check the official channel AND search for recent videos from 3+ independent creators/analysts who cover this space
+- For Chinese labs: also check Bilibili
+- Look for: reviews, demonstrations, comparisons, tutorials, news coverage
+
+### Tier 3 — Community & social
+- Reddit: search the entity name across relevant subs (r/StableDiffusion, r/LocalLLaMA, r/GenerativeAI, r/MachineLearning, etc.)
+- X/Twitter: search by entity name and relevant hashtags
+- Hacker News, Discord servers if applicable
+
+### Tier 4 — News & analysis
+- At least 2 news outlets per high-priority entity: TechCrunch, The Verge, VentureBeat, Ars Technica, SCMP,Reuters, Bloomberg AI, etc.
+- Any vertical publications that cover this entity specifically
+- Independent benchmarks or comparison posts
+
+**Rule: three good source tiers are the minimum. Four are preferred. One is never enough.**
 
 ## 2. Triage
 

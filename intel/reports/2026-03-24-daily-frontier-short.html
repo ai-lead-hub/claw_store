@@ -87,6 +87,8 @@
       margin-top: 44px;
       padding-top: 16px;
       border-top: 1px solid var(--line);
+      break-inside: avoid;
+      page-break-inside: avoid;
     }
     .section h2 {
       font-size: 34px;
@@ -103,6 +105,8 @@
     .entry {
       padding: 18px 0 20px;
       border-top: 1px solid var(--line-soft);
+      break-inside: avoid;
+      page-break-inside: avoid;
     }
     .entry:first-of-type { border-top: none; }
     .kicker {
@@ -149,6 +153,16 @@
       font-size: 12px;
       letter-spacing: .08em;
       text-transform: uppercase;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    h2, h3 {
+      break-after: avoid;
+      page-break-after: avoid;
+    }
+    p, ul, figure, .why {
+      orphans: 3;
+      widows: 3;
     }
     @page { size: A4; margin: 0; }
     @media print {

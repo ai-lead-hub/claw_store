@@ -5,6 +5,8 @@ Run a daily frontier and ecosystem intelligence collection pass for an AI filmma
 
 ## Cover every day
 
+For each entity: check official channels AND video coverage AND community discussion AND news. Not just one.
+
 ### Frontier labs
 - OpenAI
 - Google DeepMind
@@ -76,6 +78,17 @@ Run a daily frontier and ecosystem intelligence collection pass for an AI filmma
 - Japanese
 - Korean
 - optionally French/German when relevant
+
+## Mandatory source tiers per entity
+
+| Tier | Sources |
+|---|---|
+| Official | blog, product page, release notes, GitHub, arXiv |
+| Video | YouTube (official + 3+ creators/analysts), Bilibili for Chinese labs |
+| Community | Reddit, X/Twitter search, HN, Discord |
+| News | 2+ tech/news publications per high-priority entity |
+
+**One source type is failure. Cover all four.**
 
 ## Importance ranking
 

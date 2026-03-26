@@ -11,11 +11,19 @@ Run a disciplined daily intake pass for the AI filmmaking research OS.
 
 1. Read `references/watch-scope.md` for coverage and ranking.
 2. Read `references/luxury-editorial-design.md` if the output will become a designed report or PDF.
-3. Collect high-signal updates across frontier labs, creator tools, research, community, and foreign-language sources.
-4. Dedupe against recent intake when possible.
-5. Tag and rank items by AI filmmaking relevance, not generic hype.
-6. Write the daily intake into `intel/daily/YYYY-MM-DD.md` using the established schema.
-7. Promote strong items into durable folders when they are worth revisiting later.
+3. For each entity in the watch scope, conduct **exhaustive multi-source passes** before marking it "done." Minimum three distinct source types per entity:
+   - **Official channels** — blog, product page, release notes, GitHub, arXiv
+   - **Video coverage** — YouTube (official channel + major creators/analysts who cover this entity), BiliBili if Chinese
+   - **Community discussion** — Reddit (relevant subs), X/Twitter search, Hacker News, Discord
+   - **News outlets** — at least one general tech/news publication (TechCrunch, The Verge, VentureBeat, Ars Technica, SCMP, etc.) plus any vertical publications relevant to that entity
+   - **Third-party trackers** — any independent benchmarks, aggregator sites, or comparison threads
+4. Do not mark an entity as "no news found" until all four source tiers have been checked.
+5. Dedupe against recent intake when possible.
+6. Tag and rank items by AI filmmaking relevance, not generic hype.
+7. Write the daily intake into `intel/daily/YYYY-MM-DD.md` using the established schema.
+8. Promote strong items into durable folders when they are worth revisiting later.
+
+**Hard rule: research until you are confident you have found everything, not until you have found something.** One official page is not sufficient. One Reddit thread is not sufficient. Exhaust the source tiers before moving on.
 
 ## Intake rules
 
