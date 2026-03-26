@@ -10,19 +10,29 @@ For every entity in the watch scope, complete all of the following before markin
 - Official social media accounts (X, YouTube channel)
 
 ### Tier 2 — Video coverage
-- YouTube: search by entity name, check the official channel AND search for recent videos from 3+ independent creators/analysts who cover this space
-- For Chinese labs: also check Bilibili
-- Look for: reviews, demonstrations, comparisons, tutorials, news coverage
+**→ Use browser (profile=user) for all tier-2 research**
+- YouTube: navigate to YouTube search, snapshot results, click into relevant videos
+  - Search template: `https://www.youtube.com/results?search_query=<entity>+AI+video+2026`
+  - Check official channel + 3+ independent creators/analysts
+  - Capture: video titles, channel names, upload dates, view counts, descriptions
+- For Chinese labs (DeepSeek, MiniMax, Kling, Z.ai, Moonshot, Qwen, Baidu): also check Bilibili
+  - Bilibili search: `https://search.bilibili.com/all?keyword=<entity>+AI+video`
+- Look for: reviews, demonstrations, comparisons, tutorials, news breakdowns
 
 ### Tier 3 — Community & social
-- Reddit: search the entity name across relevant subs (r/StableDiffusion, r/LocalLLaMA, r/GenerativeAI, r/MachineLearning, etc.)
-- X/Twitter: search by entity name and relevant hashtags
-- Hacker News, Discord servers if applicable
+**→ Use browser (profile=user) for Reddit and dynamic community pages**
+- Reddit: navigate to Reddit search, snapshot post lists, click into relevant threads
+  - Search template: `https://www.reddit.com/search/?q=<entity>+AI+video+generation`
+  - Check: r/StableDiffusion, r/LocalLLaMA, r/GenerativeAI, r/MachineLearning, r/ComfyUI
+  - Capture: post titles, scores, comment counts, top comment context
+- X/Twitter: use web_search with entity-specific queries
+- Hacker News, Discord if applicable
 
 ### Tier 4 — News & analysis
-- At least 2 news outlets per high-priority entity: TechCrunch, The Verge, VentureBeat, Ars Technica, SCMP,Reuters, Bloomberg AI, etc.
-- Any vertical publications that cover this entity specifically
-- Independent benchmarks or comparison posts
+- web_search and web_fetch for news articles
+- At least 2 news outlets per high-priority entity: TechCrunch, The Verge, VentureBeat, Ars Technica, SCMP, Reuters, Bloomberg AI, etc.
+
+**Browser is mandatory for tiers 2 and 3. web_search/web_fetch alone are not sufficient for those tiers.**
 
 **Rule: three good source tiers are the minimum. Four are preferred. One is never enough.**
 

@@ -25,6 +25,47 @@ Run a disciplined daily intake pass for the AI filmmaking research OS.
 
 **Hard rule: research until you are confident you have found everything, not until you have found something.** One official page is not sufficient. One Reddit thread is not sufficient. Exhaust the source tiers before moving on.
 
+## Browser automation (mandatory for this skill)
+
+This skill MUST use the OpenClaw browser for all tier-2 (video) and tier-3 (community) research. The `user` profile attaches to your real logged-in Chrome session — this is required for accessing Reddit, YouTube, Bilibili, and any site with JS-rendered content.
+
+### How to use browser in subagent tasks
+
+When spawning subagents for this skill, include this instruction block:
+
+```
+## Browser setup
+- Use browser with profile="user" for ALL tier-2 (YouTube/Bilibili) and tier-3 (Reddit/community) research
+- The user profile reuses your existing Chrome login session — no extra auth needed
+- Use web_search/web_fetch for tier-1 (official) and tier-4 (news) only
+- Browser is for: YouTube creator videos, Bilibili demos, Reddit threads, dynamic pages that load via JS
+
+## Browser commands available
+- openclaw browser --browser-profile user status  # check if browser is live
+- openclaw browser --browser-profile user navigate <url>  # open a URL
+- openclaw browser --browser-profile user snapshot  # get page content with element refs
+- openclaw browser --browser-profile user screenshot  # screenshot
+- openclaw browser --browser-profile user tabs  # list open tabs
+- openclaw browser --browser-profile user open <url>  # open URL in new tab
+
+## YouTube scraping workflow
+1. Navigate to YouTube search: https://www.youtube.com/results?search_query=<entity>+AI+2026
+2. Snapshot to see video titles, channels, dates
+3. Click into relevant videos to get descriptions and comment context
+4. Screenshot thumbnails if visual evidence is needed
+
+## Reddit scraping workflow  
+1. Navigate to Reddit search: https://www.reddit.com/search/?q=<entity>+AI+video
+2. Snapshot to see post titles, scores, comment counts
+3. Click into relevant posts for full content
+
+## Browser etiquette
+- Prefer opening tabs over new windows
+- Close tabs when done
+- Keep browser state tidy between searches
+- Reuse tabs where logical (search, click, back, click next result)
+```
+
 ## Intake rules
 
 Capture breadth, but spend summary effort selectively.
