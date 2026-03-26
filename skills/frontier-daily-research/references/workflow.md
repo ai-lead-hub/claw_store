@@ -28,6 +28,12 @@ For every entity in the watch scope, complete all of the following before markin
 - X/Twitter: use web_search with entity-specific queries
 - Hacker News, Discord if applicable
 
+- X/Twitter: use BROWSER with profile="user" — X loads content dynamically via JS and requires a real browser session with your login
+  - Navigate to: https://twitter.com/search?q=<entity>+AI+video&src=typed_query
+  - Snapshot results, click into relevant posts
+  - If logged in, you can also check your home feed for trending posts about entities
+  - X Premium+ can be checked for trending topics
+
 ### Tier 4 — News & analysis
 - web_search and web_fetch for news articles
 - At least 2 news outlets per high-priority entity: TechCrunch, The Verge, VentureBeat, Ars Technica, SCMP, Reuters, Bloomberg AI, etc.

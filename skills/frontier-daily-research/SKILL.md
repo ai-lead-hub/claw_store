@@ -27,7 +27,7 @@ Run a disciplined daily intake pass for the AI filmmaking research OS.
 
 ## Browser automation (mandatory for this skill)
 
-This skill MUST use the OpenClaw browser for all tier-2 (video) and tier-3 (community) research. The `user` profile attaches to your real logged-in Chrome session — this is required for accessing Reddit, YouTube, Bilibili, and any site with JS-rendered content.
+This skill MUST use the OpenClaw browser for all tier-2 (video) and tier-3 (community/X/Twitter) research. The `user` profile attaches to your real logged-in Chrome session — this is required for accessing Reddit, YouTube, Bilibili, X/Twitter, and any site with JS-rendered content.
 
 ### How to use browser in subagent tasks
 
@@ -35,10 +35,10 @@ When spawning subagents for this skill, include this instruction block:
 
 ```
 ## Browser setup
-- Use browser with profile="user" for ALL tier-2 (YouTube/Bilibili) and tier-3 (Reddit/community) research
+- Use browser with profile="user" for ALL tier-2 (YouTube/Bilibili) and tier-3 (Reddit/X/Twitter/community) research
 - The user profile reuses your existing Chrome login session — no extra auth needed
 - Use web_search/web_fetch for tier-1 (official) and tier-4 (news) only
-- Browser is for: YouTube creator videos, Bilibili demos, Reddit threads, dynamic pages that load via JS
+- Browser is for: YouTube creator videos, Bilibili demos, Reddit threads, X/Twitter posts, dynamic pages that load via JS
 
 ## Browser commands available
 - openclaw browser --browser-profile user status  # check if browser is live
@@ -58,6 +58,12 @@ When spawning subagents for this skill, include this instruction block:
 1. Navigate to Reddit search: https://www.reddit.com/search/?q=<entity>+AI+video
 2. Snapshot to see post titles, scores, comment counts
 3. Click into relevant posts for full content
+
+## X/Twitter scraping workflow
+1. Navigate to: https://twitter.com/search?q=<entity>+AI+video&src=typed_query
+2. Snapshot to see post text, handles, engagement counts
+3. Click into relevant posts for full context and replies
+4. If logged in, check trending topics for AI filmmaking related terms
 
 ## Browser etiquette
 - Prefer opening tabs over new windows
