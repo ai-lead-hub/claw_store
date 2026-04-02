@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.4.1",
+    "lastTouchedAt": "2026-04-02T19:17:12.325Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-04-02T18:42:38.835Z",
+    "lastRunVersion": "2026.4.1",
+    "lastRunCommand": "configure",
+    "lastRunMode": "local"
+  },
+  "auth": {
+    "profiles": {
+      "byteplus:default": {
+        "provider": "byteplus",
+        "mode": "api_key"
+      },
+      "openrouter:default": {
+        "provider": "openrouter",
+        "mode": "api_key"
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "openrouter/minimax/minimax-m2.7",
+        "fallbacks": [
+          "openrouter/qwen/qwen3.5-397b-a17b",
+          "byteplus-plan/ark-code-latest"
+        ]
+      },
+      "models": {
+        "byteplus-plan/ark-code-latest": {},
+        "openrouter/minimax/minimax-m2.7": {}
+      },
+      "workspace": "/home/ayush_jalan/.openclaw/workspace",
+      "memorySearch": {
+        "provider": "google",
+        "model": "google/gemini-embedding-001",
+        "remote": {
+          "apiKey": "AIzaSyCh-Wv6RF3aiuuwFjjgw3vV_Y-Q4gXxPMs"
+        }
+      },
+      "thinkingDefault": "adaptive",
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      }
+    }
+  },
+  "tools": {
+    "profile": "coding",
+    "web": {
+      "search": {
+        "provider": "gemini"
+      }
+    },
+    "exec": {
+      "security": "full",
+      "ask": "off"
+    }
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "dmPolicy": "pairing",
+      "botToken": "8664233886:AAFG_Rz8jrP49udZkj_U4VU-JCZUTM4vJg0",
+      "groups": {
+        "*": {
+          "requireMention": true
+        }
+      },
+      "groupPolicy": "allowlist",
+      "streaming": "partial"
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "loopback",
+    "controlUi": {
+      "allowInsecureAuth": true
+    },
+    "auth": {
+      "mode": "token",
+      "token": "8cc387992375d15e34ca58a9f485b92bd77c43642d54c684"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    },
+    "nodes": {
+      "denyCommands": [
+        "camera.snap",
+        "camera.clip",
+        "screen.record",
+        "contacts.add",
+        "calendar.add",
+        "reminders.add",
+        "sms.send",
+        "sms.search"
+      ]
+    }
+  },
+  "mcp": {
+    "servers": {
+      "chrome-devtools": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "chrome-devtools-mcp@latest",
+          "--no-usage-statistics",
+          "--ws-endpoint=ws://127.0.0.1:9222/devtools/browser"
+        ]
+      }
+    }
+  },
+  "plugins": {
+    "entries": {
+      "google": {
+        "enabled": true,
+        "config": {
+          "webSearch": {
+            "apiKey": "AIzaSyCh-Wv6RF3aiuuwFjjgw3vV_Y-Q4gXxPMs"
+          }
+        }
+      }
+    }
+  },
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "skills": {
+    "entries": {
+      "x-ai-search-weekly-intel": {
+        "enabled": false
+      }
+    }
+  }
+}
