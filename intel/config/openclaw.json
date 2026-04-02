@@ -1,10 +1,10 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.4.1",
-    "lastTouchedAt": "2026-04-02T19:17:12.325Z"
+    "lastTouchedAt": "2026-04-02T19:24:12.387Z"
   },
   "wizard": {
-    "lastRunAt": "2026-04-02T18:42:38.835Z",
+    "lastRunAt": "2026-04-02T19:24:12.339Z",
     "lastRunVersion": "2026.4.1",
     "lastRunCommand": "configure",
     "lastRunMode": "local"
@@ -26,26 +26,39 @@
       "model": {
         "primary": "openrouter/minimax/minimax-m2.7",
         "fallbacks": [
-          "openrouter/qwen/qwen3.5-397b-a17b",
-          "byteplus-plan/ark-code-latest"
+          "openrouter/qwen/qwen3.5-397b-a17b"
         ]
       },
       "models": {
         "byteplus-plan/ark-code-latest": {},
-        "openrouter/minimax/minimax-m2.7": {}
+        "openrouter/minimax/minimax-m2.7": {},
+        "openrouter/auto": {
+          "alias": "OpenRouter"
+        },
+        "openrouter/qwen/qwen3.5-397b-a17b": {}
       },
       "workspace": "/home/ayush_jalan/.openclaw/workspace",
       "memorySearch": {
         "provider": "google",
         "model": "google/gemini-embedding-001",
         "remote": {
-          "apiKey": "AIzaSyCh-Wv6RF3aiuuwFjjgw3vV_Y-Q4gXxPMs"
+          "apiKey": "${GEMINI_API_KEY}"
         }
       },
       "thinkingDefault": "adaptive",
       "maxConcurrent": 4,
       "subagents": {
         "maxConcurrent": 8
+      },
+      "compaction": {
+        "mode": "safeguard",
+        "timeoutSeconds": 900,
+        "reserveTokensFloor": 24000,
+        "identifierPolicy": "strict",
+        "postCompactionSections": [
+          "Session Startup",
+          "Red Lines"
+        ]
       }
     }
   },
@@ -74,7 +87,7 @@
     "telegram": {
       "enabled": true,
       "dmPolicy": "pairing",
-      "botToken": "8664233886:AAFG_Rz8jrP49udZkj_U4VU-JCZUTM4vJg0",
+      "botToken": "${TELEGRAM_BOT_TOKEN}",
       "groups": {
         "*": {
           "requireMention": true
@@ -131,7 +144,7 @@
         "enabled": true,
         "config": {
           "webSearch": {
-            "apiKey": "AIzaSyCh-Wv6RF3aiuuwFjjgw3vV_Y-Q4gXxPMs"
+            "apiKey": "${GEMINI_API_KEY}"
           }
         }
       }

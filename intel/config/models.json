@@ -56,7 +56,7 @@
           "maxTokens": 4096
         }
       ],
-      "apiKey": "ae897504-6884-44e0-a644-895e7ff78e3f"
+      "apiKey": "${BYTEPLUS_API_KEY}"
     },
     "byteplus-plan": {
       "baseUrl": "https://ark.ap-southeast.bytepluses.com/api/coding/v3",
@@ -143,7 +143,7 @@
           "maxTokens": 4096
         }
       ],
-      "apiKey": "ae897504-6884-44e0-a644-895e7ff78e3f"
+      "apiKey": "${BYTEPLUS_API_KEY}"
     },
     "openrouter": {
       "baseUrl": "https://openrouter.ai/api/v1",
@@ -200,7 +200,7 @@
           "maxTokens": 65536
         }
       ],
-      "apiKey": "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"
+      "apiKey": "${OPENROUTER_API_KEY}"
     }
   }
 }
