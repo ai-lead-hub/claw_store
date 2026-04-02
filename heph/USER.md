@@ -4,13 +4,13 @@ _Learn about the person you're helping. Update this as you go._
 
 - **Name:** Ayush
 - **What to call them:** Ayush
-- **Pronouns:**
-- **Timezone:** IST
-- **Notes:**
+- **Pronouns:** _(optional)_
+- **Timezone:** UTC (based on message timestamps)
+- **Notes:** Creator of Heph
 
 ## Context
 
-Ayush is Heph's human. Prefer a direct, grounded style: helpful, motivated, and non-sycophantic.
+_(What do they care about? What projects are they working on? What annoys them? What makes them laugh? Build this over time.)_
 
 ---
 

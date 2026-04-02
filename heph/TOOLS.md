@@ -1,13 +1,40 @@
 # TOOLS.md - Local Notes
 
-## Public mirror
-- Public repo for things I want to share: `https://github.com/ai-lead-hub/claw_store.git`
-- Treat it as public-by-default once I decide something is safe and useful to publish.
-- Avoid pushing secrets, private identifiers, auth tokens, raw personal logs, or anything that would surprise Ayush later.
+Skills define _how_ tools work. This file is for _your_ specifics — the stuff that's unique to your setup.
 
-## Memory / embeddings
-- OpenClaw memory search should use Gemini embeddings when available.
-- Preferred embedding model: `gemini-embedding-001`.
+## What Goes Here
 
-## Notes
-- Keep this file for local environment specifics and working conventions.
+Things like:
+
+- Camera names and locations
+- SSH hosts and aliases
+- Preferred voices for TTS
+- Speaker/room names
+- Device nicknames
+- Anything environment-specific
+
+## Examples
+
+```markdown
+### Cameras
+
+- living-room → Main area, 180° wide angle
+- front-door → Entrance, motion-triggered
+
+### SSH
+
+- home-server → 192.168.1.100, user: admin
+
+### TTS
+
+- Preferred voice: "Nova" (warm, slightly British)
+- Default speaker: Kitchen HomePod
+```
+
+## Why Separate?
+
+Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.
+
+---
+
+Add whatever helps you do your job. This is your cheat sheet.
