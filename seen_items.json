@@ -1,434 +1,362 @@
 {
-  "9f6fb34b357dc6fd": {
+  "4e1cebe7e5d65afc": {
     "title": "OpenAI acquires TBPN, the buzzy founder-led business talk show",
-    "url": "https://techcrunch.com/2026/04/02/openai-acquires-tbpn-the-buzzy-founder-led-business-talk-show/",
+    "url": "https://techcrunch.com/2026/04/02/openai-acquires-tbpn/",
     "source": "TechCrunch",
     "date": "2026-04-02",
     "category": "lab",
-    "summary": "OpenAI completed the acquisition of TBPN \u2014 the founder-focused business talk show network \u2014 as it expands its media and content distribution play. No financial terms disclosed. TBPN's audience of startup founders and VCs will now get OpenAI-first coverage.",
-    "fingerprints": "9f6fb34b357dc6fd"
+    "fingerprints": "4e1cebe7e5d65afc"
   },
-  "9c122a9af19cc98b": {
-    "title": "Microsoft launches 3 new AI models in direct shot at OpenAI and Google",
-    "url": "https://venturebeat.com/technology/microsoft-launches-3-new-ai-models-in-direct-shot-at-openai-and-google",
+  "10bb31978e2bd0d5": {
+    "title": "Microsoft launches 3 new AI models \u2014 MAI-Transcribe-1, MAI-Voice-1, MAI-Image-2",
+    "url": "https://venturebeat.com/technology/microsoft-launches-3-new-ai-models",
     "source": "VentureBeat",
     "date": "2026-04-02",
     "category": "lab",
-    "summary": "Microsoft's newly formed superintelligence team, led by Mustafa Suleyman, dropped three models simultaneously: MAI-Transcribe-1 (speech-to-text), MAI-Voice-1 (human-like voice synthesis), and MAI-Image-2 (image generation). Available immediately via Microsoft Foundry and the new MAI Playground. A clear signal that Microsoft is building AI self-sufficiency beyond OpenAI.",
-    "fingerprints": "9c122a9af19cc98b"
+    "fingerprints": "10bb31978e2bd0d5"
   },
-  "bbe32fb8c70a7d49": {
-    "title": "Google releases Gemma 4 under Apache 2.0 \u2014 and that license change may matter more than benchmarks",
-    "url": "https://venturebeat.com/technology/google-releases-gemma-4-under-apache-2-0-and-that-license-change-may-matter",
+  "a0d18023bb87315c": {
+    "title": "Google releases Gemma 4 under Apache 2.0",
+    "url": "https://venturebeat.com/technology/google-releases-gemma-4",
     "source": "VentureBeat",
     "date": "2026-04-02",
     "category": "lab",
-    "summary": "While Alibaba's Qwen has been restricting open releases of its latest models, Google went the opposite direction: Gemma 4 ships under Apache 2.0 \u2014 fully open for commercial use with no restrictions. The strategic intent: position Google as the 'open' alternative and undercut the closed-model ecosystem. Benchmark numbers matter less than the licensing signal.",
-    "fingerprints": "bbe32fb8c70a7d49"
+    "fingerprints": "a0d18023bb87315c"
   },
-  "492531e48f697148": {
-    "title": "Google now lets you direct avatars through prompts in its Vids app",
-    "url": "https://techcrunch.com/2026/04/02/google-now-lets-you-direct-avatars-through-prompts-in-its-vids-app/",
+  "69ac195cc5f2f06e": {
+    "title": "Google enables prompt-driven avatar direction in Vids app",
+    "url": "https://techcrunch.com/2026/04/02/google-now-lets-you-direct-avatars",
     "source": "TechCrunch",
     "date": "2026-04-02",
     "category": "product",
-    "summary": "Google's Vids app gets prompt-driven avatar direction \u2014 users can now tell AI avatars what to do and say via natural language prompts. Part of Google's broader AI video push to compete with OpenAI's (now shut down) Sora and Runway.",
-    "fingerprints": "492531e48f697148"
+    "fingerprints": "69ac195cc5f2f06e"
   },
-  "23578f1fbb7c02d1": {
-    "title": "Anthropic took down thousands of GitHub repos trying to yank its leaked source code",
-    "url": "https://techcrunch.com/2026/04/01/anthropic-took-down-thousands-of-github-repos-trying-to-yank-its-leaked-source-code-a-move-the-company-says-was-an-accident/",
+  "e8ea0dd0629a442a": {
+    "title": "Anthropic took down thousands of GitHub repos trying to yank leaked source code",
+    "url": "https://techcrunch.com/2026/04/01/anthropic-took-down-thousands-of-github-repos",
     "source": "TechCrunch",
     "date": "2026-04-01",
     "category": "lab",
-    "summary": "In what appears to be an overzealous DMCA-style enforcement sweep, Anthropic sent takedown requests to thousands of GitHub repositories. The trigger: Claude Code source code had leaked online. Anthropic acknowledged the move was accidental \u2014 many repos had nothing to do with the leak. Raises serious questions about automated enforcement at scale.",
-    "fingerprints": "23578f1fbb7c02d1"
+    "fingerprints": "e8ea0dd0629a442a"
   },
-  "696c8c3bc113505e": {
-    "title": "Claude Code's source code appears to have leaked: here's what we know",
-    "url": "https://venturebeat.com/technology/claude-codes-source-code-appears-to-have-leaked-heres-what-we-know",
+  "9afa97b774b87c04": {
+    "title": "Claude Code's source code appears to have leaked",
+    "url": "https://venturebeat.com/technology/claude-codes-source-code",
     "source": "VentureBeat",
     "date": "2026-03-31",
     "category": "lab",
-    "summary": "Anthropic's AI coding agent, Claude Code, had its source code published online \u2014 giving competitors a literal blueprint for building a high-agency, commercially viable coding agent. Cursor, Copilot, and others now have an architectural reference. The leak was live for several days before being pulled.",
-    "fingerprints": "696c8c3bc113505e"
+    "fingerprints": "9afa97b774b87c04"
   },
-  "665ffbd46541b903": {
+  "b0b21023701a32b1": {
     "title": "Anthropic is having a month",
-    "url": "https://techcrunch.com/2026/03/31/anthropic-is-having-a-month/",
+    "url": "https://techcrunch.com/2026/03/31/anthropic-is-having-a-month",
     "source": "TechCrunch",
     "date": "2026-03-31",
     "category": "lab",
-    "summary": "Claude's paid consumer adoption is 'skyrocketing' per multiple signals \u2014 the combination of the leak incident, GitHub takedown drama, and the Claude 3.5 rollout has kept Anthropic at the center of AI conversation all month.",
-    "fingerprints": "665ffbd46541b903"
+    "fingerprints": "b0b21023701a32b1"
   },
-  "851f258cdd382e62": {
-    "title": "OpenAI, not yet public, raises $3B from retail investors in monster $122B fund raise",
-    "url": "https://techcrunch.com/2026/03/31/openai-not-yet-public-raises-3b-from-retail-investors-in-monster-122b-fund-raise/",
+  "2c266a8fbbd18a42": {
+    "title": "OpenAI raises $3B from retail investors in $122B fundraise",
+    "url": "https://techcrunch.com/2026/03/31/openai-not-yet-public-raises-3b",
     "source": "TechCrunch",
     "date": "2026-03-31",
     "category": "lab",
-    "summary": "OpenAI closed $3B from retail investors in a $122B fundraising round \u2014 the largest retail raise in AI history. Despite not being public, OpenAI opened the round to ordinary investors through Wealthfront and similar platforms. $122B valuation makes it the most valuable private AI company in the world.",
-    "fingerprints": "851f258cdd382e62"
+    "fingerprints": "2c266a8fbbd18a42"
   },
-  "417cba462c132595": {
+  "8067d0828ada0d2c": {
     "title": "Why OpenAI really shut down Sora",
-    "url": "https://techcrunch.com/2026/03/29/why-openai-really-shut-down-sora/",
+    "url": "https://techcrunch.com/2026/03/29/why-openai-really-shut-down-sora",
     "source": "TechCrunch",
     "date": "2026-03-29",
     "category": "lab",
-    "summary": "After Sora's launch, OpenAI pulled the product. The real reasons appear to be a combination of compute costs, legal liability from generated content, and internal competition from Veo and other video models. A reality check moment for the entire AI video category.",
-    "fingerprints": "417cba462c132595"
+    "fingerprints": "8067d0828ada0d2c"
   },
-  "9c74672117844f56": {
+  "d728da56d83e0989": {
     "title": "Elon Musk's last co-founder reportedly leaves xAI",
-    "url": "https://techcrunch.com/2026/03/28/elon-musks-last-co-founder-reportedly-leaves-xai/",
+    "url": "https://techcrunch.com/2026/03/28/elon-musks-last-co-founder-reportedly-leaves-xai",
     "source": "TechCrunch",
     "date": "2026-03-28",
     "category": "lab",
-    "summary": "The last remaining xAI co-founder other than Musk has left the company. xAI is now effectively Musk alone. The departure accelerates questions about xAI's technical depth and long-term team stability as it tries to compete with OpenAI and Google DeepMind.",
-    "fingerprints": "9c74672117844f56"
+    "fingerprints": "d728da56d83e0989"
   },
-  "ac412cb38932b2d2": {
-    "title": "Mistral AI raises $830M in debt to set up a data center near Paris",
-    "url": "https://techcrunch.com/2026/03/30/mistral-ai-raises-830m-in-debt-to-set-up-a-data-center-near-paris/",
+  "078d884f488dbf8a": {
+    "title": "Mistral AI raises $830M in debt for Paris data center",
+    "url": "https://techcrunch.com/2026/03/30/mistral-ai-raises-830m-in-debt",
     "source": "TechCrunch",
     "date": "2026-03-30",
     "category": "lab",
-    "summary": "Europe's flagship AI lab is building physical infrastructure: $830M in debt financing to construct a dedicated data center near Paris. The move signals Mistral's transition from model API business to full-stack AI company with proprietary compute \u2014 and a direct challenge to US cloud providers for European enterprise workloads.",
-    "fingerprints": "ac412cb38932b2d2"
+    "fingerprints": "078d884f488dbf8a"
   },
-  "4d7a2758a1f478a3": {
+  "60202eeb0b1f184a": {
     "title": "Meta's natural gas binge could power South Dakota",
-    "url": "https://techcrunch.com/2026/04/01/metas-natural-gas-binge-could-power-south-dakota/",
+    "url": "https://techcrunch.com/2026/04/01/metas-natural-gas-binge",
     "source": "TechCrunch",
     "date": "2026-04-01",
     "category": "lab",
-    "summary": "A deep investigation into Meta's energy consumption reveals its AI data centers are burning natural gas at a scale that could power an entire US state. The environmental cost of training and running frontier models is becoming a serious reputational and regulatory risk for big tech.",
-    "fingerprints": "4d7a2758a1f478a3"
+    "fingerprints": "60202eeb0b1f184a"
   },
-  "1e9baeba5a1f162a": {
-    "title": "AI chip startup Rebellions raises $400 million at $2.3B valuation in pre-IPO round",
-    "url": "https://techcrunch.com/2026/03/30/ai-chip-startup-rebellions-raises-400-million-at-2-3b-valuation-in-pre-ipo-round/",
+  "3e33251434e2e443": {
+    "title": "Rebellions raises $400M at $2.3B valuation pre-IPO",
+    "url": "https://techcrunch.com/2026/03/30/ai-chip-startup-rebellions-raises-400-million",
     "source": "TechCrunch",
     "date": "2026-03-30",
     "category": "funding",
-    "summary": "South Korea's Rebellions raised $400M at a $2.3B valuation in a pre-IPO round. The company designs custom AI inference chips \u2014 ATOM, its NPU \u2014 targeting data center efficiency. The IPO is expected in H2 2026. Backers include KDB Investment and other sovereign funds.",
-    "fingerprints": "1e9baeba5a1f162a"
+    "fingerprints": "3e33251434e2e443"
   },
-  "1d29eda41cc3558f": {
-    "title": "Starcloud raises $170 million Series A to build data centers in space",
-    "url": "https://techcrunch.com/2026/03/30/starcloud-raises-170-million-series-ato-build-data-centers-in-space/",
+  "701ee9206be802d7": {
+    "title": "Starcloud raises $170M Series A for space data centers",
+    "url": "https://techcrunch.com/2026/03/30/starcloud-raises-170-million",
     "source": "TechCrunch",
     "date": "2026-03-30",
     "category": "funding",
-    "summary": "Starcloud raised $170M Series A to deploy AI-optimized data centers in low Earth orbit. The company argues that space-based compute can eliminate land costs, cooling requirements, and achieve very low latency via direct-to-earth optical links. Ambitious and speculative \u2014 but the funding came from serious space VCs.",
-    "fingerprints": "1d29eda41cc3558f"
+    "fingerprints": "701ee9206be802d7"
   },
-  "3e7c0a897d02fa02": {
-    "title": "ScaleOps raises $130M to improve computing efficiency amid AI demand",
-    "url": "https://techcrunch.com/2026/03/30/scaleops-130m-series-c-kubernetes-efficiency-ai-demand-funding/",
+  "5a6b12fd1f4f4f69": {
+    "title": "ScaleOps raises $130M for compute efficiency",
+    "url": "https://techcrunch.com/2026/03/30/scaleops-130m-series-c",
     "source": "TechCrunch",
     "date": "2026-03-30",
     "category": "funding",
-    "summary": "ScaleOps \u2014 which automates cloud resource optimization for AI workloads \u2014 raised $130M Series C. As enterprises run more GPU-intensive workloads, efficient compute allocation is becoming a first-order priority and a large market opportunity.",
-    "fingerprints": "3e7c0a897d02fa02"
+    "fingerprints": "5a6b12fd1f4f4f69"
   },
-  "110c4ade92aa9a08": {
-    "title": "Cognichip wants AI to design the chips that power AI, and just raised $60M to try",
-    "url": "https://techcrunch.com/2026/04/01/cognichip-wants-ai-to-design-the-chips-that-power-ai-and-just-raised-60m-to-try/",
+  "bbe301e32295b992": {
+    "title": "Cognichip raises $60M for AI chip design automation",
+    "url": "https://techcrunch.com/2026/04/01/cognichip-wants-ai-to-design-chips",
     "source": "TechCrunch",
     "date": "2026-04-01",
     "category": "funding",
-    "summary": "Cognichip raised $60M to use AI in the chip design process itself \u2014 automating RTL generation, floor planning, and timing closure. If it works, it could compress chip design cycles from years to months. A meta-AI play in the hardware stack.",
-    "fingerprints": "110c4ade92aa9a08"
+    "fingerprints": "bbe301e32295b992"
   },
-  "d88012e6f649244a": {
-    "title": "Nvidia-backed ThinkLabs AI raises $28M to tackle a growing power grid crunch",
-    "url": "https://venturebeat.com/infrastructure/nvidia-backed-thinklabs-ai-raises-usd28-million-to-tackle-a-growing-power",
+  "bce5bf6112d6ef7c": {
+    "title": "ThinkLabs AI raises $28M for power grid AI (Nvidia-backed)",
+    "url": "https://venturebeat.com/infrastructure/nvidia-backed-thinklabs-ai-raises",
     "source": "VentureBeat",
     "date": "2026-03-31",
     "category": "funding",
-    "summary": "ThinkLabs AI uses physics-informed neural networks to model electrical grid behavior in real time, compressing engineering studies from weeks to minutes. The $28M raise was led by Nvidia's venture arm. Critical infrastructure AI that doesn't get as much attention as generative AI but may be more consequential.",
-    "fingerprints": "d88012e6f649244a"
+    "fingerprints": "bce5bf6112d6ef7c"
   },
-  "dc0bf1a6d7a22914": {
-    "title": "Runway launches $10M fund, Builders program to support early-stage AI startups",
-    "url": "https://techcrunch.com/2026/03/31/exclusive-runway-launches-10m-fund-builders-program-to-support-early-stage-ai-startups/",
+  "53a285c67e76e035": {
+    "title": "Nomadic raises $8.4M for AV data management",
+    "url": "https://techcrunch.com/2026/03/31/nomadic-raises-8-4-million",
     "source": "TechCrunch",
     "date": "2026-03-31",
     "category": "funding",
-    "summary": "Runway, facing increasing competition from OpenAI (Sora), Google (Veo), and Pika, is investing in the startup ecosystem to build competitive moats. The Builders program offers GPU credits, mentorship, and distribution partnerships for early-stage AI video and media companies.",
-    "fingerprints": "dc0bf1a6d7a22914"
+    "fingerprints": "53a285c67e76e035"
   },
-  "afc419990655d72a": {
-    "title": "Intuit's AI agents hit 85% repeat usage. The secret was keeping humans involved",
-    "url": "https://venturebeat.com/orchestration/intuits-ai-agents-hit-85-repeat-usage-the-secret-was-keeping-humans-involved",
-    "source": "VentureBeat",
-    "date": "2026-04-02",
-    "category": "enterprise",
-    "summary": "After shipping AI to 3 million customers, Intuit found the key to retention wasn't better chatbots \u2014 it was knowing exactly when to hand off to a human expert. 85% repeat usage is an exceptional number for AI consumer products. The insight: hybrid human-AI workflows outperform pure automation for complex financial tasks.",
-    "fingerprints": "afc419990655d72a"
-  },
-  "cb28e4e1b676ef56": {
-    "title": "Slack adds 30 AI features to Slackbot, its most ambitious update since the Salesforce acquisition",
-    "url": "https://venturebeat.com/orchestration/slack-adds-30-ai-features-to-slackbot-its-most-ambitious-update-since-the",
-    "source": "VentureBeat",
-    "date": "2026-03-31",
-    "category": "enterprise",
-    "summary": "Salesforce delivered its most significant Slack overhaul: 30 new AI features across summarization, search, workflow automation, and data retrieval. Inside Salesforce, teams claim 20 hours per week savings per employee \u2014 worth $6.4M+ in productivity. On track to be the fastest-adopted product in Salesforce's 27-year history.",
-    "fingerprints": "cb28e4e1b676ef56"
-  },
-  "129e3643a5bf7a62": {
-    "title": "Salesforce announces an AI-heavy makeover for Slack, with 30 new features",
-    "url": "https://techcrunch.com/2026/03/31/salesforce-announces-an-ai-heavy-makeover-for-slack-with-30-new-features/",
+  "c296feeb5aa18623": {
+    "title": "Runway launches $10M fund + Builders program",
+    "url": "https://techcrunch.com/2026/03/31/exclusive-runway-launches-10m-fund",
     "source": "TechCrunch",
     "date": "2026-03-31",
-    "category": "enterprise",
-    "summary": "Concurrent coverage confirming Slack's AI transformation. The features lean heavily into enterprise workflow automation \u2014 connecting to Salesforce CRM data, automating ticket routing, and providing real-time meeting summaries.",
-    "fingerprints": "129e3643a5bf7a62"
+    "category": "funding",
+    "fingerprints": "c296feeb5aa18623"
   },
-  "c968662662795b62": {
-    "title": "The end of 'shadow AI' at enterprises? Kilo launches KiloClaw for Organizations",
-    "url": "https://venturebeat.com/orchestration/the-end-of-shadow-ai-at-enterprises-kilo-launches-kiloclaw-for-organizations",
-    "source": "VentureBeat",
-    "date": "2026-04-02",
-    "category": "enterprise",
-    "summary": "Shadow AI \u2014 employees using unsanctioned AI tools at work \u2014 is the enterprise IT nightmare of 2026. KiloClaw for Organizations introduces 'bot accounts' for every employee (e.g., scott.bot@kiloco.ai), giving IT departments visibility and control over AI tool usage while letting workers keep their personal AI workflows.",
-    "fingerprints": "c968662662795b62"
-  },
-  "3fbadfb20c19a36d": {
-    "title": "Meta's new structured prompting technique makes LLMs significantly better at code review",
-    "url": "https://venturebeat.com/orchestration/metas-new-structured-prompting-technique-makes-llms-significantly-better-at",
-    "source": "VentureBeat",
-    "date": "2026-04-01",
-    "category": "research",
-    "summary": "Meta published a prompting technique that boosts LLM code review accuracy to 93% in some cases \u2014 no fine-tuning, no extra tools, no training. The method is execution-free and can be applied out-of-the-box to any LLM via structured output formats. A significant productivity unlock for development teams.",
-    "fingerprints": "3fbadfb20c19a36d"
-  },
-  "da3cfb09fde4c382": {
-    "title": "Cohere's open-weight ASR model hits 5.4% word error rate \u2014 low enough to replace speech APIs",
-    "url": "https://venturebeat.com/orchestration/coheres-open-weight-asr-model-hits-5-4-word-error-rate-low-enough-to-replace",
-    "source": "VentureBeat",
-    "date": "2026-03-30",
-    "category": "research",
-    "summary": "Cohere released an open-weight automatic speech recognition (ASR) model with a 5.4% WER \u2014 comparable to Whisper and well within production-quality thresholds. The open-weight release means enterprises can run transcription entirely on-premises with no API costs or data leaving their infrastructure.",
-    "fingerprints": "da3cfb09fde4c382"
-  },
-  "f0e16a0b9203fec0": {
-    "title": "Softr launches AI-native platform to help nontechnical teams build business apps without code",
-    "url": "https://venturebeat.com/technology/softr-launches-ai-native-platform-to-help-nontechnical-teams-build-business",
-    "source": "VentureBeat",
-    "date": "2026-03-31",
-    "category": "product",
-    "summary": "Softr's AI Co-Builder lets non-technical users describe apps in plain language and generates a fully integrated system: database, UI, permissions, and business logic \u2014 connected and ready for deployment. The next evolution of no-code: AI that understands intent and builds the full stack.",
-    "fingerprints": "f0e16a0b9203fec0"
-  },
-  "fde7f43b4d640239": {
-    "title": "When product managers ship code: AI just broke the software org chart",
-    "url": "https://venturebeat.com/technology/when-product-managers-ship-code-ai-just-broke-the-software-org-chart",
-    "source": "VentureBeat",
-    "date": "2026-03-29",
-    "category": "enterprise",
-    "summary": "A product manager at a software company built, tested, and shipped a feature to production in a single day using AI tools. No handoff to engineering, no ticket created. The traditional software development hierarchy is being compressed by AI coding tools \u2014 this is a first-person account of what it looks like in practice.",
-    "fingerprints": "fde7f43b4d640239"
-  },
-  "a1de9e281ddeb30d": {
-    "title": "Bluesky leans into AI with Attie, an app for building custom feeds",
-    "url": "https://techcrunch.com/2026/03/28/bluesky-leans-into-ai-with-attie-an-app-for-building-custom-feeds/",
-    "source": "TechCrunch",
-    "date": "2026-03-28",
-    "category": "product",
-    "summary": "Bluesky launched Attie \u2014 an AI app for building custom content feeds on the Bluesky social network. The social platform is betting that AI-powered personalization, built on an open protocol, can compete with the algorithmic feeds of X and Threads.",
-    "fingerprints": "a1de9e281ddeb30d"
-  },
-  "52e11b8667a76582": {
-    "title": "Alexa+ gets new food ordering experiences with Uber Eats and Grubhub",
-    "url": "https://techcrunch.com/2026/03/31/alexa-plus-new-food-ordering-experiences-with-uber-eats-and-grubhub/",
-    "source": "TechCrunch",
-    "date": "2026-03-31",
-    "category": "product",
-    "summary": "Amazon's Alexa Plus integration with Uber Eats and Grubhub puts food ordering inside the voice AI assistant experience. The move signals Amazon's push to make Alexa Plus a daily utility \u2014 not just a smart speaker novelty.",
-    "fingerprints": "52e11b8667a76582"
-  },
-  "10a8be8fc891fe53": {
-    "title": "Mercor says it was hit by cyberattack tied to compromise of open source LiteLLM project",
-    "url": "https://techcrunch.com/2026/03/31/mercor-says-it-was-hit-by-cyberattack-tied-to-compromise-of-open-source-litellm-project/",
-    "source": "TechCrunch",
-    "date": "2026-03-31",
-    "category": "security",
-    "summary": "AI hiring platform Mercor disclosed a cyberattack traced to a vulnerability in the open-source LiteLLM project \u2014 a popular AI gateway library used by thousands of companies to manage LLM API calls. The compromise of LiteLLM is a supply-chain level event affecting numerous AI companies simultaneously.",
-    "fingerprints": "10a8be8fc891fe53"
-  },
-  "99315ec461e3371d": {
-    "title": "Popular AI gateway startup LiteLLM ditches controversial startup Delve",
-    "url": "https://techcrunch.com/2026/03/30/popular-ai-gateway-startup-litellm-ditches-controversial-startup-delve/",
-    "source": "TechCrunch",
-    "date": "2026-03-30",
-    "category": "security",
-    "summary": "LiteLLM \u2014 the AI gateway startup whose compromised dependency triggered the Mercor breach \u2014 dropped its integration with Delve, an AI startup facing scrutiny for its surveillance practices targeting HR and recruiting. The dual pressure of a security incident and ethical concerns forced the split.",
-    "fingerprints": "99315ec461e3371d"
-  },
-  "70262b8641caf133": {
-    "title": "Stanford study outlines dangers of asking AI chatbots for personal advice",
-    "url": "https://techcrunch.com/2026/03/28/stanford-study-outlines-dangers-of-asking-ai-chatbots-for-personal-advice/",
-    "source": "TechCrunch",
-    "date": "2026-03-28",
-    "category": "safety",
-    "summary": "A Stanford study catalogs the risks of using AI chatbots for personal, financial, and health advice: hallucinated citations, emotionally manipulative outputs, and lack of accountability. As AI assistants become primary advice sources for millions, the liability questions are becoming urgent.",
-    "fingerprints": "70262b8641caf133"
-  },
-  "dcf9e2d5a528faf5": {
-    "title": "HippoCamp: Benchmarking Contextual Agents on Personal Computers",
-    "url": "https://arxiv.org/abs/2604.01221",
-    "source": "arXiv:2604.01221",
-    "date": "2026-04-02",
-    "category": "research",
-    "summary": "A new benchmark for evaluating AI agents performing real-world computer tasks \u2014 browsing, filing, writing emails, using desktop applications. From Zhe Yang, Shuai Liu, Ziwei Liu et al. (SCV-NTU). Tests agents on actual PC workflows, not synthetic environments. Project page: hippocamp-ai.github.io",
-    "fingerprints": "dcf9e2d5a528faf5"
-  },
-  "9b62a9d401d3a7bc": {
-    "title": "OmniMem: Autoresearch-Guided Discovery of Lifelong Multimodal Agent Memory",
-    "url": "https://arxiv.org/abs/2604.01007",
-    "source": "arXiv:2604.01007",
-    "date": "2026-04-02",
-    "category": "research",
-    "summary": "An agent memory system that autonomously discovers and retains useful knowledge across long horizons. OmniMem uses an auto-research loop to identify what to remember, compressing multimodal experiences into reusable knowledge structures. From Huaxiu Yao, Cihang Xie et al.",
-    "fingerprints": "9b62a9d401d3a7bc"
-  },
-  "c770bca470db48e4": {
-    "title": "PsychAgent: An Experience-Driven Lifelong Learning Agent for Self-Evolving Psychological Counselor",
-    "url": "https://arxiv.org/abs/2604.00931",
-    "source": "arXiv:2604.00931",
-    "date": "2026-04-02",
-    "category": "research",
-    "summary": "A lifelong learning agent designed as a psychological counselor \u2014 it retains session history, updates its approach based on interaction outcomes, and maintains therapeutic context across long conversations. From Yutao Yang, Junsong Li, Liang He et al. Strong signal that AI mental health support is moving from chatbot novelty to clinical-grade self-evolving systems.",
-    "fingerprints": "c770bca470db48e4"
-  },
-  "79760d0d90be3cbc": {
-    "title": "RefineRL: Advancing Competitive Programming with Self-Refinement Reinforcement Learning",
-    "url": "https://arxiv.org/abs/2604.00790",
-    "source": "arXiv:2604.00790",
-    "date": "2026-04-02",
-    "category": "research",
-    "summary": "RefineRL applies reinforcement learning with self-refinement to competitive programming. The agent generates code solutions, executes them against test cases, uses feedback to refine \u2014 iteratively. From Microsoft Research (Shaopeng Fu, Xingxing Zhang, Furu Wei). State-of-the-art potential on competitive programming benchmarks.",
-    "fingerprints": "79760d0d90be3cbc"
-  },
-  "85a075173414f0c6": {
-    "title": "The Silicon Mirror: Dynamic Behavioral Gating for Anti-Sycophancy in LLM Agents",
-    "url": "https://arxiv.org/abs/2604.00478",
-    "source": "arXiv:2604.00478",
-    "date": "2026-04-02",
-    "category": "research",
-    "summary": "Sycophancy \u2014 LLMs agreeing with users even when wrong \u2014 is especially dangerous in agentic contexts. The Silicon Mirror introduces a gating mechanism that detects when the agent is shaping its response to please rather than being accurate. Code and evaluation data available on GitHub. Independent researcher Harshee Jignesh Shah.",
-    "fingerprints": "85a075173414f0c6"
-  },
-  "d00fb5ecf430ad66": {
-    "title": "Detecting Multi-Agent Collusion Through Multi-Agent Interpretability",
-    "url": "https://arxiv.org/abs/2604.01151",
-    "source": "arXiv:2604.01151",
-    "date": "2026-04-02",
-    "category": "research",
-    "summary": "A safety research paper addressing multi-agent systems where multiple AI agents may coordinate in ways that are hard to interpret or detect. The paper introduces interpretability tools for identifying emergent collusive behavior in agent networks. From Oxford Future of Humanity Institute researchers.",
-    "fingerprints": "d00fb5ecf430ad66"
-  },
-  "827efd744bc935e3": {
-    "title": "Adversarial Moral Stress Testing of Large Language Models",
-    "url": "https://arxiv.org/abs/2604.01108",
-    "source": "arXiv:2604.01108",
-    "date": "2026-04-02",
-    "category": "research",
-    "summary": "A systematic stress-testing framework for LLM moral reasoning under adversarial conditions. Tests models against systematically constructed moral dilemmas designed to trigger inconsistent, harmful, or contradictory outputs. From Polytechnique Montr\u00e9al and McGill researchers.",
-    "fingerprints": "827efd744bc935e3"
-  },
-  "515fe180297bc4d6": {
-    "title": "Agent psychometrics: Task-level performance prediction in agentic coding benchmarks",
-    "url": "https://arxiv.org/abs/2604.00594",
-    "source": "arXiv:2604.00594",
-    "date": "2026-04-02",
-    "category": "research",
-    "summary": "Rather than benchmarking agent performance on aggregate scores, Agent Psychometrics introduces task-level predictive models \u2014 predicting which specific coding tasks an agent will fail on, before running them. From Daniel Fried, Uzay Girit (allenai). A fundamental advance in agent evaluation methodology.",
-    "fingerprints": "515fe180297bc4d6"
-  },
-  "d577add0dba9fbfd": {
-    "title": "YC-Bench: Benchmarking AI Agents for Long-Term Planning and Consistent Execution",
-    "url": "https://arxiv.org/abs/2604.01210",
-    "source": "arXiv:2604.01210 (cross-list cs.CL)",
-    "date": "2026-04-02",
-    "category": "research",
-    "summary": "Yet Another Coding benchmark \u2014 YC-Bench tests agents not just on individual coding tasks but on multi-step projects requiring consistent execution over days of simulated work. Tests for drift, task abandonment, and compounding errors. From Invoke AI and Allen Institute for AI.",
-    "fingerprints": "d577add0dba9fbfd"
-  },
-  "c741b378d84df719": {
-    "title": "BloClaw: An Omniscient, Multi-Modal Agentic Workspace for Next-Generation Scientific Discovery",
-    "url": "https://arxiv.org/abs/2604.00550",
-    "source": "arXiv:2604.00550",
-    "date": "2026-04-02",
-    "category": "research",
-    "summary": "An AI workspace that simultaneously sees your code, documents, terminal, browser, and data \u2014 and can take actions across all of them to advance scientific research goals. BloClaw is being positioned as a scientific co-researcher. From Yao Qin (UCSB), Jinhua Pang.",
-    "fingerprints": "c741b378d84df719"
-  },
-  "248d830208a1a887": {
-    "title": "UK AISI Alignment Evaluation Case-Study",
-    "url": "https://arxiv.org/abs/2604.00788",
-    "source": "arXiv:2604.00788",
-    "date": "2026-04-02",
-    "category": "policy",
-    "summary": "The UK's AI Safety Institute published its first major alignment evaluation \u2014 an in-depth case study of frontier model behavior under controlled conditions. Authors include Robert Kirk (UK AISI) and Abby D'Cruz. The most transparent view yet into how a major government's AI safety body actually evaluates models.",
-    "fingerprints": "248d830208a1a887"
-  },
-  "26fb19205c7a1e79": {
-    "title": "15% of Americans say they'd be willing to work for an AI boss",
-    "url": "https://techcrunch.com/2026/03/30/ai-work-boss-supervisor-us-quinnipiac-poll/",
-    "source": "TechCrunch",
-    "date": "2026-03-30",
-    "category": "society",
-    "summary": "A Quinnipiac poll found 15% of Americans would be willing to work under an AI supervisor \u2014 and 85% would not. The generational divide is stark. Among 18-34 year olds, openness to AI management is significantly higher. As AI agents enter workplace management roles, this data will shape enterprise adoption strategies.",
-    "fingerprints": "26fb19205c7a1e79"
-  },
-  "722e2883c93d8a0d": {
-    "title": "As more Americans adopt AI tools, fewer say they can trust the results",
-    "url": "https://techcrunch.com/2026/03/30/ai-trust-adoption-poll-more-americans-adopt-tools-fewer-say-they-can-trust-the-results/",
-    "source": "TechCrunch",
-    "date": "2026-03-30",
-    "category": "society",
-    "summary": "A new survey shows AI adoption rising while trust in AI outputs falls \u2014 the 'trust gap' is widening. Americans are using AI more but believing it less. A critical challenge for AI companies as deployment scales.",
-    "fingerprints": "722e2883c93d8a0d"
-  },
-  "d341d6aa319e76f5": {
-    "title": "Midjourney engineer debuts new vibe coded, open source standard Pretext to revolutionize web design",
-    "url": "https://venturebeat.com/technology/midjourney-engineer-debuts-new-vibe-coded-open-source-standard-pretext-to",
-    "source": "VentureBeat",
-    "date": "2026-03-31",
-    "category": "tools",
-    "summary": "A Midjourney engineer created 'Pretext' \u2014 an open-source standard for 'vibe coding' web layouts, where text is treated as a fluid substance that can be recalculated every single frame. A playful but technically serious re-imagination of how developers interact with UI layout at the material level.",
-    "fingerprints": "d341d6aa319e76f5"
-  },
-  "8e903737934971b4": {
-    "title": "Qodo raises $70M for code verification as AI coding scales",
-    "url": "https://techcrunch.com/2026/03/30/qodo-bets-on-code-verification-as-ai-coding-scales-raises-70m/",
+  "db8e10a92f36b138": {
+    "title": "Qodo raises $70M for code verification",
+    "url": "https://techcrunch.com/2026/03/30/qodo-raises-70m",
     "source": "TechCrunch",
     "date": "2026-03-30",
     "category": "funding",
-    "summary": "Qodo (formerly Melos) raised $70M for its code verification platform \u2014 products that check AI-generated code for correctness, security, and style compliance. As AI-generated code proliferates, the verification layer becomes as important as the generation layer.",
-    "fingerprints": "8e903737934971b4"
+    "fingerprints": "db8e10a92f36b138"
   },
-  "9f86ce848c153496": {
-    "title": "Yupp shuts down after raising $33M from a16z crypto's Chris Dixon",
-    "url": "https://techcrunch.com/2026/03/31/yupp-ai-shuts-down-33m-a16z-crypto-chris-dixon/",
+  "76910d9b8936666d": {
+    "title": "Yupp shuts down after raising $33M",
+    "url": "https://techcrunch.com/2026/03/31/yupp-ai-shuts-down",
     "source": "TechCrunch",
     "date": "2026-03-31",
     "category": "startup",
-    "summary": "Yupp, an AI-powered startup backed by a16z crypto and Chris Dixon, shut down. $33M raised, no product-market fit. Another data point in the growing list of well-funded AI startups that couldn't find a sustainable business model.",
-    "fingerprints": "9f86ce848c153496"
+    "fingerprints": "76910d9b8936666d"
   },
-  "505e08cf76a4e66d": {
-    "title": "Nomadic raises $8.4M to wrangle the data pouring off autonomous vehicles",
-    "url": "https://techcrunch.com/2026/03/31/nomadic-raises-8-4-million-to-wrangle-the-data-pouring-off-avs/",
+  "b142c9a739fd6f65": {
+    "title": "Intuit's AI agents hit 85% repeat usage",
+    "url": "https://venturebeat.com/orchestration/intuits-ai-agents-hit-85-repeat-usage",
+    "source": "VentureBeat",
+    "date": "2026-04-02",
+    "category": "enterprise",
+    "fingerprints": "b142c9a739fd6f65"
+  },
+  "d0ceed15fd2ed68f": {
+    "title": "Slack adds 30 AI features \u2014 fastest Salesforce product ever",
+    "url": "https://venturebeat.com/orchestration/slack-adds-30-ai-features",
+    "source": "VentureBeat",
+    "date": "2026-03-31",
+    "category": "enterprise",
+    "fingerprints": "d0ceed15fd2ed68f"
+  },
+  "62cda22c0fcbc6b9": {
+    "title": "KiloClaw for Organizations tackles shadow AI",
+    "url": "https://venturebeat.com/orchestration/the-end-of-shadow-ai-at-enterprises",
+    "source": "VentureBeat",
+    "date": "2026-04-02",
+    "category": "enterprise",
+    "fingerprints": "62cda22c0fcbc6b9"
+  },
+  "0a718637f76c9dc8": {
+    "title": "When PMs ship code: AI broke the software org chart",
+    "url": "https://venturebeat.com/technology/when-product-managers-ship-code",
+    "source": "VentureBeat",
+    "date": "2026-03-29",
+    "category": "enterprise",
+    "fingerprints": "0a718637f76c9dc8"
+  },
+  "60bd9529c0198eb7": {
+    "title": "Meta structured prompting: 93% code review accuracy",
+    "url": "https://venturebeat.com/orchestration/metas-new-structured-prompting",
+    "source": "VentureBeat",
+    "date": "2026-04-01",
+    "category": "research",
+    "fingerprints": "60bd9529c0198eb7"
+  },
+  "91793c20baffc5f6": {
+    "title": "Cohere ASR: 5.4% WER open-weight model",
+    "url": "https://venturebeat.com/orchestration/coheres-open-weight-asr-model",
+    "source": "VentureBeat",
+    "date": "2026-03-30",
+    "category": "research",
+    "fingerprints": "91793c20baffc5f6"
+  },
+  "bd5d5159a2a82626": {
+    "title": "HippoCamp: Benchmarking agents on personal computers (arXiv)",
+    "url": "https://arxiv.org/abs/2604.01221",
+    "source": "arXiv",
+    "date": "2026-04-02",
+    "category": "research",
+    "fingerprints": "bd5d5159a2a82626"
+  },
+  "fad02cdd1fbb934d": {
+    "title": "OmniMem: Lifelong multimodal agent memory (arXiv)",
+    "url": "https://arxiv.org/abs/2604.01007",
+    "source": "arXiv",
+    "date": "2026-04-02",
+    "category": "research",
+    "fingerprints": "fad02cdd1fbb934d"
+  },
+  "920cafc95091915e": {
+    "title": "PsychAgent: Self-evolving psychological counselor (arXiv)",
+    "url": "https://arxiv.org/abs/2604.00931",
+    "source": "arXiv",
+    "date": "2026-04-02",
+    "category": "research",
+    "fingerprints": "920cafc95091915e"
+  },
+  "e960d3158f013f10": {
+    "title": "RefineRL: Self-refinement RL for competitive programming (arXiv)",
+    "url": "https://arxiv.org/abs/2604.00790",
+    "source": "arXiv",
+    "date": "2026-04-02",
+    "category": "research",
+    "fingerprints": "e960d3158f013f10"
+  },
+  "dca527972ea85f99": {
+    "title": "The Silicon Mirror: Anti-sycophancy gating (arXiv)",
+    "url": "https://arxiv.org/abs/2604.00478",
+    "source": "arXiv",
+    "date": "2026-04-02",
+    "category": "research",
+    "fingerprints": "dca527972ea85f99"
+  },
+  "fff9a38fe2d23eb2": {
+    "title": "YC-Bench: Long-term planning for AI agents (arXiv)",
+    "url": "https://arxiv.org/abs/2604.01210",
+    "source": "arXiv",
+    "date": "2026-04-02",
+    "category": "research",
+    "fingerprints": "fff9a38fe2d23eb2"
+  },
+  "ccd86e4a879f45e9": {
+    "title": "BloClaw: Multi-modal scientific workspace (arXiv)",
+    "url": "https://arxiv.org/abs/2604.00550",
+    "source": "arXiv",
+    "date": "2026-04-02",
+    "category": "research",
+    "fingerprints": "ccd86e4a879f45e9"
+  },
+  "ec3b948c65566252": {
+    "title": "Multi-Agent Collusion Detection (arXiv)",
+    "url": "https://arxiv.org/abs/2604.01151",
+    "source": "arXiv",
+    "date": "2026-04-02",
+    "category": "research",
+    "fingerprints": "ec3b948c65566252"
+  },
+  "fb7573978f82821a": {
+    "title": "UK AISI Alignment Evaluation (arXiv)",
+    "url": "https://arxiv.org/abs/2604.00788",
+    "source": "arXiv",
+    "date": "2026-04-02",
+    "category": "policy",
+    "fingerprints": "fb7573978f82821a"
+  },
+  "3d8dd5d7acae5b75": {
+    "title": "Mercor cyberattack tied to LiteLLM compromise",
+    "url": "https://techcrunch.com/2026/03/31/mercor-cyberattack-litellm",
     "source": "TechCrunch",
     "date": "2026-03-31",
-    "category": "funding",
-    "summary": "Nomadic raised $8.4M to handle the massive data management challenge of autonomous vehicle fleets \u2014 annotation, storage, retrieval, and real-time processing of sensor data. Boring infrastructure play that becomes critical as Waymo, Tesla, and others scale their AV fleets.",
-    "fingerprints": "505e08cf76a4e66d"
+    "category": "security",
+    "fingerprints": "3d8dd5d7acae5b75"
+  },
+  "b7fa0e04282b6ace": {
+    "title": "LiteLLM drops Delve integration",
+    "url": "https://techcrunch.com/2026/03/30/popular-ai-gateway-startup-litellm-ditches",
+    "source": "TechCrunch",
+    "date": "2026-03-30",
+    "category": "security",
+    "fingerprints": "b7fa0e04282b6ace"
+  },
+  "8de8c262b923ca9d": {
+    "title": "Stanford: Dangers of AI chatbots for personal advice",
+    "url": "https://techcrunch.com/2026/03/28/stanford-study-ai-chatbots-personal-advice",
+    "source": "TechCrunch",
+    "date": "2026-03-28",
+    "category": "security",
+    "fingerprints": "8de8c262b923ca9d"
+  },
+  "5cfc718e15a67527": {
+    "title": "15% of Americans willing to work for AI boss (Quinnipiac)",
+    "url": "https://techcrunch.com/2026/03/30/ai-work-boss-supervisor",
+    "source": "TechCrunch",
+    "date": "2026-03-30",
+    "category": "society",
+    "fingerprints": "5cfc718e15a67527"
+  },
+  "8e1b3309914316f7": {
+    "title": "AI trust gap: more use, less trust",
+    "url": "https://techcrunch.com/2026/03/30/ai-trust-adoption-poll",
+    "source": "TechCrunch",
+    "date": "2026-03-30",
+    "category": "society",
+    "fingerprints": "8e1b3309914316f7"
+  },
+  "8ac10bb0d741df39": {
+    "title": "Pretext: Midjourney engineer's vibe-coded web standard",
+    "url": "https://venturebeat.com/technology/midjourney-engineer-pretext",
+    "source": "VentureBeat",
+    "date": "2026-03-31",
+    "category": "tools",
+    "fingerprints": "8ac10bb0d741df39"
+  },
+  "3e51e96f6cd67a3c": {
+    "title": "Softr AI Co-Builder: no-code app builder",
+    "url": "https://venturebeat.com/technology/softr-launches-ai-native-platform",
+    "source": "VentureBeat",
+    "date": "2026-03-31",
+    "category": "tools",
+    "fingerprints": "3e51e96f6cd67a3c"
+  },
+  "9932484fd38af5ff": {
+    "title": "Alexa+ food ordering via Uber Eats and Grubhub",
+    "url": "https://techcrunch.com/2026/03/31/alexa-plus-food-ordering",
+    "source": "TechCrunch",
+    "date": "2026-03-31",
+    "category": "product",
+    "fingerprints": "9932484fd38af5ff"
+  },
+  "85a617bfb9bb809e": {
+    "title": "Bluesky launches Attie: AI for custom feeds",
+    "url": "https://techcrunch.com/2026/03/28/bluesky-leans-into-ai-attie",
+    "source": "TechCrunch",
+    "date": "2026-03-28",
+    "category": "product",
+    "fingerprints": "85a617bfb9bb809e"
   }
 }
