@@ -358,5 +358,563 @@
     "date": "2026-03-28",
     "category": "product",
     "fingerprints": "85a617bfb9bb809e"
+  },
+  "c98b24c000c593d9": {
+    "title": "OpenAI acquires TBPN \u2014 the founder-focused business talk show network",
+    "url": "https://techcrunch.com/2026/04/02/openai-acquires-tbpn/",
+    "source": "TechCrunch",
+    "date": "2026-04-02",
+    "category": "lab",
+    "summary": "OpenAI acquired TBPN, expanding its content distribution reach to startup founders and VCs. No financial terms disclosed.",
+    "fingerprints": "c98b24c000c593d9"
+  },
+  "aecb025f92da7b22": {
+    "title": "Microsoft MAI superintelligence team drops 3 models: Transcribe-1, Voice-1, Image-2",
+    "url": "https://venturebeat.com/technology/microsoft-launches-3-new-ai-models",
+    "source": "VentureBeat",
+    "date": "2026-04-02",
+    "category": "lab",
+    "summary": "Mustafa Suleyman's team launched three models simultaneously via Microsoft Foundry and MAI Playground. A clear signal Microsoft is building AI self-sufficiency beyond OpenAI partnership.",
+    "fingerprints": "aecb025f92da7b22"
+  },
+  "acb5aedec1bbaac1": {
+    "title": "Google Gemma 4 released under Apache 2.0 \u2014 the open-source signal that matters more than benchmarks",
+    "url": "https://venturebeat.com/technology/google-releases-gemma-4",
+    "source": "VentureBeat",
+    "date": "2026-04-02",
+    "category": "lab",
+    "summary": "Gemma 4 31B (dense, 256K context) and 26B A4B (MoE, 4B active, 256K context) both natively multimodal. Apache 2.0 = fully open commercial use. Google's strategic move: own the 'open' positioning while Qwen restricts access.",
+    "fingerprints": "acb5aedec1bbaac1"
+  },
+  "fca17470190018d2": {
+    "title": "Google Vids gets prompt-driven avatar direction \u2014 AI actors you can direct with words",
+    "url": "https://techcrunch.com/2026/04/02/google-now-lets-you-direct-avatars/",
+    "source": "TechCrunch",
+    "date": "2026-04-02",
+    "category": "product",
+    "summary": "Google Vids now lets users direct AI avatars via natural language prompts. Part of Google's broader AI video push against Runway and the now-shut-down Sora.",
+    "fingerprints": "fca17470190018d2"
+  },
+  "9add11ae0de7bb77": {
+    "title": "Anthropic's GitHub takedown spree: thousands of repos wrongly yanked in Claude Code leak response",
+    "url": "https://techcrunch.com/2026/04/01/anthropic-took-down-thousands-of-github-repos/",
+    "source": "TechCrunch",
+    "date": "2026-04-01",
+    "category": "lab",
+    "summary": "Anthropic sent automated takedown requests to thousands of GitHub repos responding to a Claude Code source leak. Many repos had nothing to do with it. Acknowledged as accidental overreach. Questions about automated IP enforcement at scale.",
+    "fingerprints": "9add11ae0de7bb77"
+  },
+  "fb2a9e48c04b0065": {
+    "title": "Claude Code source code leaked online \u2014 competitors now have a blueprint",
+    "url": "https://venturebeat.com/technology/claude-codes-source-code-appears-to-have-leaked",
+    "source": "VentureBeat",
+    "date": "2026-03-31",
+    "category": "lab",
+    "summary": "Anthropic's AI coding agent source was published online for days before being pulled. A literal architectural reference for Cursor, Copilot, and others building high-agency coding agents.",
+    "fingerprints": "fb2a9e48c04b0065"
+  },
+  "8310295425a7de9e": {
+    "title": "OpenAI: $122B valuation, $3B retail raise \u2014 not public but opening doors to ordinary investors",
+    "url": "https://techcrunch.com/2026/03/31/openai-not-yet-public-raises-3b",
+    "source": "TechCrunch",
+    "date": "2026-03-31",
+    "category": "lab",
+    "summary": "Largest retail AI investment in history: $3B from retail investors. OpenAI opened the round to ordinary investors via wealth management platforms. Signals IPO preparation.",
+    "fingerprints": "8310295425a7de9e"
+  },
+  "d107426479a0332e": {
+    "title": "Mistral AI: $830M debt raise for Paris data center \u2014 Europe's full-stack AI moment",
+    "url": "https://techcrunch.com/2026/03/30/mistral-ai-raises-830m-in-debt/",
+    "source": "TechCrunch",
+    "date": "2026-03-30",
+    "category": "lab",
+    "summary": "Europe's flagship AI lab building proprietary compute near Paris. Transition from API reseller to full-stack AI company. Direct challenge to US hyperscalers for European enterprise workloads.",
+    "fingerprints": "d107426479a0332e"
+  },
+  "bd00cc08ff597e9b": {
+    "title": "Why OpenAI really shut down Sora: compute costs, legal liability, market reality",
+    "url": "https://techcrunch.com/2026/03/29/why-openai-really-shut-down-sora/",
+    "source": "TechCrunch",
+    "date": "2026-03-29",
+    "category": "lab",
+    "summary": "Sora pulled: compute costs, content liability, and internal Veo competition made the unit economics unwork. Reality check for the entire AI video generation category.",
+    "fingerprints": "bd00cc08ff597e9b"
+  },
+  "c8372c62c308375b": {
+    "title": "xAI: last remaining co-founder departs \u2014 Musk now effectively alone",
+    "url": "https://techcrunch.com/2026/03/28/elon-musks-last-co-founder-reportedly-leaves-xai/",
+    "source": "TechCrunch",
+    "date": "2026-03-28",
+    "category": "lab",
+    "summary": "The last xAI co-founder has left. xAI is now effectively solo-Musk, raising questions about technical depth and team stability.",
+    "fingerprints": "c8372c62c308375b"
+  },
+  "8351f19e01dddbf9": {
+    "title": "Meta's AI data centers burning natural gas at a scale that could power South Dakota",
+    "url": "https://techcrunch.com/2026/04/01/metas-natural-gas-binge/",
+    "source": "TechCrunch",
+    "date": "2026-04-01",
+    "category": "lab",
+    "summary": "Deep investigation: Meta's AI infrastructure consuming natural gas at near-state-level scale. Serious reputational and regulatory risk as AI energy consumption accelerates.",
+    "fingerprints": "8351f19e01dddbf9"
+  },
+  "d0d7a0006ecfebee": {
+    "title": "Rebellions raises $400M at $2.3B valuation (pre-IPO) \u2014 South Korea's AI chip darling goes public",
+    "url": "https://techcrunch.com/2026/03/30/ai-chip-startup-rebellions-raises-400-million/",
+    "source": "TechCrunch",
+    "date": "2026-03-30",
+    "category": "funding",
+    "summary": "ATOM NPU designer targeting data center inference efficiency. IPO expected H2 2026. KDB Investment led. $2.3B valuation signals strong institutional confidence in AI inference chip market.",
+    "fingerprints": "d0d7a0006ecfebee"
+  },
+  "e6ac48b03e707a56": {
+    "title": "Starcloud raises $170M Series A for space-based AI data centers",
+    "url": "https://techcrunch.com/2026/03/30/starcloud-raises-170-million/",
+    "source": "TechCrunch",
+    "date": "2026-03-30",
+    "category": "funding",
+    "summary": "Deploying AI-optimized compute in low Earth orbit. Eliminates land costs, cooling, achieves low latency via direct optical links. Ambitious but backed by serious space VCs.",
+    "fingerprints": "e6ac48b03e707a56"
+  },
+  "169b4e9c5dcb3783": {
+    "title": "ScaleOps raises $130M Series C for AI compute optimization",
+    "url": "https://techcrunch.com/2026/03/30/scaleops-130m-series-c/",
+    "source": "TechCrunch",
+    "date": "2026-03-30",
+    "category": "funding",
+    "summary": "Automating cloud resource allocation for GPU-intensive AI workloads. As enterprises scale AI compute, efficient resource management is becoming a $B+ market.",
+    "fingerprints": "169b4e9c5dcb3783"
+  },
+  "f7a87df43eeb4134": {
+    "title": "Qodo raises $70M for AI code verification \u2014 the quality layer for AI-generated code",
+    "url": "https://techcrunch.com/2026/03/30/qodo-raises-70m/",
+    "source": "TechCrunch",
+    "date": "2026-03-30",
+    "category": "funding",
+    "summary": "Code verification for correctness, security, style compliance. As AI-generated code becomes the norm, the verification and testing layer becomes critical infrastructure.",
+    "fingerprints": "f7a87df43eeb4134"
+  },
+  "f417dfb720781eb8": {
+    "title": "Cognichip raises $60M: AI designing the chips that power AI",
+    "url": "https://techcrunch.com/2026/04/01/cognichip-wants-ai-to-design-the-chips/",
+    "source": "TechCrunch",
+    "date": "2026-04-01",
+    "category": "funding",
+    "summary": "Automating chip design: RTL generation, floor planning, timing closure via AI. Compresses chip design cycles from years to months. Meta-AI at the hardware layer.",
+    "fingerprints": "f417dfb720781eb8"
+  },
+  "3c11e8ef02a1cfee": {
+    "title": "ThinkLabs AI raises $28M (Nvidia-backed) for AI-powered power grid management",
+    "url": "https://venturebeat.com/infrastructure/nvidia-backed-thinklabs-ai-raises",
+    "source": "VentureBeat",
+    "date": "2026-03-31",
+    "category": "funding",
+    "summary": "Physics-informed neural networks for real-time electrical grid modeling. Compresses engineering studies from weeks to minutes. Critical infrastructure AI \u2014 potentially more consequential than generative AI.",
+    "fingerprints": "3c11e8ef02a1cfee"
+  },
+  "6801c2693411698b": {
+    "title": "Nomadic raises $8.4M to wrangle autonomous vehicle data at scale",
+    "url": "https://techcrunch.com/2026/03/31/nomadic-raises-8-4-million/",
+    "source": "TechCrunch",
+    "date": "2026-03-31",
+    "category": "funding",
+    "summary": "Annotation, storage, retrieval, real-time processing of AV sensor data. Unglamorous but critical infrastructure as Waymo and Tesla scale their fleets.",
+    "fingerprints": "6801c2693411698b"
+  },
+  "4b0f0bc5f356db9d": {
+    "title": "Runway launches $10M fund + Builders program for AI startups",
+    "url": "https://techcrunch.com/2026/03/31/exclusive-runway-launches-10m-fund/",
+    "source": "TechCrunch",
+    "date": "2026-03-31",
+    "category": "funding",
+    "summary": "GPU credits, mentorship, distribution partnerships for early-stage AI video and media companies. Building competitive moats against OpenAI and Google Veo.",
+    "fingerprints": "4b0f0bc5f356db9d"
+  },
+  "c08bd7911934f864": {
+    "title": "Intuit AI agents: 85% repeat usage \u2014 hybrid human-AI workflow is the unlock",
+    "url": "https://venturebeat.com/orchestration/intuits-ai-agents-hit-85-repeat-usage",
+    "source": "VentureBeat",
+    "date": "2026-04-02",
+    "category": "enterprise",
+    "summary": "After shipping to 3M customers, Intuit found the key was knowing when to hand off to a human expert. Complex financial decisions require hybrid human-AI workflows, not pure automation.",
+    "fingerprints": "c08bd7911934f864"
+  },
+  "59c39f083b8c7109": {
+    "title": "Slack ships 30 AI features \u2014 fastest-adopted Salesforce product in 27 years",
+    "url": "https://venturebeat.com/orchestration/slack-adds-30-ai-features",
+    "source": "VentureBeat",
+    "date": "2026-03-31",
+    "category": "enterprise",
+    "summary": "CRM data retrieval, meeting summaries, workflow automation, ticket routing. Inside teams claiming 20 hours/week savings per employee. Salesforce's most significant Slack update since acquisition.",
+    "fingerprints": "59c39f083b8c7109"
+  },
+  "c7228b348ac85053": {
+    "title": "KiloClaw for Organizations: the bot-account solution to shadow AI",
+    "url": "https://venturebeat.com/orchestration/the-end-of-shadow-ai-at-enterprises",
+    "source": "VentureBeat",
+    "date": "2026-04-02",
+    "category": "enterprise",
+    "summary": "Shadow AI is the enterprise IT nightmare of 2026. KiloClaw introduces 'bot accounts' for every employee (e.g., scott.bot@kiloco.ai) giving IT visibility while preserving personal AI workflows.",
+    "fingerprints": "c7228b348ac85053"
+  },
+  "5f2f7865d047fe47": {
+    "title": "When a PM shipped code in one day: AI broke the software org chart",
+    "url": "https://venturebeat.com/technology/when-product-managers-ship-code",
+    "source": "VentureBeat",
+    "date": "2026-03-29",
+    "category": "enterprise",
+    "summary": "First-person account: product manager built, tested, and shipped a production feature in one day. No ticket, no handoff to engineering. The traditional software hierarchy is being compressed.",
+    "fingerprints": "5f2f7865d047fe47"
+  },
+  "d314e289e4552018": {
+    "title": "Meta structured prompting: 93% LLM code review accuracy \u2014 no fine-tuning required",
+    "url": "https://venturebeat.com/orchestration/metas-new-structured-prompting",
+    "source": "VentureBeat",
+    "date": "2026-04-01",
+    "category": "research",
+    "summary": "Structured output formats boost LLM code review to 93% accuracy without any training. Immediately applicable productivity unlock for any development team using LLMs.",
+    "fingerprints": "d314e289e4552018"
+  },
+  "dca80a09eb39b26a": {
+    "title": "Cohere ASR: 5.4% WER open-weight model \u2014 production quality, no API required",
+    "url": "https://venturebeat.com/orchestration/coheres-open-weight-asr-model",
+    "source": "VentureBeat",
+    "date": "2026-03-30",
+    "category": "research",
+    "summary": "Automatic speech recognition matching Whisper quality. Enterprises can run full transcription pipelines entirely on-premises. No data leaves their infrastructure. Game-changer for privacy-sensitive voice AI.",
+    "fingerprints": "dca80a09eb39b26a"
+  },
+  "ff4835eecb587891": {
+    "title": "arXiv cs.CL: HippoCamp \u2014 benchmarking AI agents on real personal computers",
+    "url": "https://arxiv.org/abs/2604.01221",
+    "source": "arXiv",
+    "date": "2026-04-02",
+    "category": "research",
+    "summary": "New benchmark testing agents on actual PC tasks (browsing, filing, email, desktop apps) not synthetic environments. From Ziwei Liu's SCV-NTU group. Project: hippocamp-ai.github.io",
+    "fingerprints": "ff4835eecb587891"
+  },
+  "03c5d9581a05752f": {
+    "title": "arXiv cs.CL: OmniMem \u2014 lifelong memory for multimodal agents via auto-research",
+    "url": "https://arxiv.org/abs/2604.01007",
+    "source": "arXiv",
+    "date": "2026-04-02",
+    "category": "research",
+    "summary": "Agent that autonomously discovers and retains useful knowledge across long interaction horizons. Uses auto-research loop to identify reusable knowledge from multimodal experiences. From Huaxiu Yao, Cihang Xie.",
+    "fingerprints": "03c5d9581a05752f"
+  },
+  "e268804246117271": {
+    "title": "arXiv cs.CL: PsychAgent \u2014 self-evolving AI psychological counselor via lifelong learning",
+    "url": "https://arxiv.org/abs/2604.00931",
+    "source": "arXiv",
+    "date": "2026-04-02",
+    "category": "research",
+    "summary": "Retains session history, updates therapeutic approach based on outcomes. AI mental health support evolving from chatbot novelty to clinical-grade self-evolving system.",
+    "fingerprints": "e268804246117271"
+  },
+  "ab23893f4861a513": {
+    "title": "arXiv cs.CL: RefineRL \u2014 self-refinement RL for competitive programming (Microsoft Research)",
+    "url": "https://arxiv.org/abs/2604.00790",
+    "source": "arXiv",
+    "date": "2026-04-02",
+    "category": "research",
+    "summary": "Code generation + test execution + iterative refinement via RL. Potential new SOTA on competitive programming benchmarks. Authors: Shaopeng Fu, Furu Wei (Microsoft Research).",
+    "fingerprints": "ab23893f4861a513"
+  },
+  "1b82b9d33bbd69f0": {
+    "title": "arXiv cs.CL: The Silicon Mirror \u2014 anti-sycophancy gating for LLM agents",
+    "url": "https://arxiv.org/abs/2604.00478",
+    "source": "arXiv",
+    "date": "2026-04-02",
+    "category": "research",
+    "summary": "Detects when agent shapes response to please user rather than being accurate. Gating mechanism for agentic contexts where sycophancy is dangerous. GitHub: langgraph-layered-context",
+    "fingerprints": "1b82b9d33bbd69f0"
+  },
+  "e1069480f5f4f257": {
+    "title": "Reddit r/ML: Optuna vs AutoResearch \u2014 code-space search beats hyperparameter tuning",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1satj6r/",
+    "source": "Reddit/r/ML",
+    "date": "2026-04-03",
+    "category": "research",
+    "summary": "Community benchmark: AutoResearch converges faster, more cost-efficient, generalizes better than Optuna. Key: searches in code space, not parameter space. Despite 2\u00d7 higher per-step cost, outperforms across all cost budgets.",
+    "fingerprints": "e1069480f5f4f257"
+  },
+  "e57a040b8d310d68": {
+    "title": "Reddit r/ML: PhAIL \u2014 robot AI benchmark on real hardware. Best model = 5% of human throughput",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1sajdwr/",
+    "source": "Reddit/r/ML",
+    "date": "2026-04-03",
+    "category": "research",
+    "summary": "Open benchmark for VLA models (OpenPI, GR00T, ACT, SmolVLA) on bin-to-bin warehouse picking. OpenPI: 65 UPH vs human 1,331 UPH. MTBF 4 min = full-time babysitter needed. Every run public with video and telemetry. phail.ai",
+    "fingerprints": "e57a040b8d310d68"
+  },
+  "2d5159491ad6fb18": {
+    "title": "Reddit r/ML: Google TurboQuant paper controversy \u2014 unfair benchmarks, missing attributions",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1s7m7rn/",
+    "source": "Reddit/r/ML",
+    "date": "2026-03-30",
+    "category": "research",
+    "summary": "OpenReview discussion: Google allegedly compared TurboQuant against RaBitQ (single-core CPU vs GPU), failed to attribute prior work. 296 upvotes. Benchmark gaming remains endemic in ML research.",
+    "fingerprints": "2d5159491ad6fb18"
+  },
+  "294f372811440924": {
+    "title": "Reddit r/ML: Stanford CS 25 Transformers Course \u2014 open to all",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1sa3cf0/",
+    "source": "Reddit/r/ML",
+    "date": "2026-04-02",
+    "category": "research",
+    "summary": "Stanford's transformer architecture course open for registration. Strong community interest (135 upvotes). Transformer education remains at the ML frontier.",
+    "fingerprints": "294f372811440924"
+  },
+  "1fd580f8381fcf8a": {
+    "title": "Reddit r/ML: LeCun's $1B for EBM \u2014 is autoregressive AI hitting a wall for formal reasoning?",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1s3j3ef/",
+    "source": "Reddit/r/ML",
+    "date": "2026-03-25",
+    "category": "research",
+    "summary": "Logical Intelligence raising $1B to use Energy-Based Models for mathematically verified code. 274 upvotes, 111 comments. Community debate: EBM paradigm shift or expensive physics experiment?",
+    "fingerprints": "1fd580f8381fcf8a"
+  },
+  "5b9c1c3979f446e8": {
+    "title": "Reddit r/ML: Jane Street Dormant LLM Challenge solved \u2014 full backdoor analysis",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1sarnt0/",
+    "source": "Reddit/r/ML",
+    "date": "2026-04-03",
+    "category": "security",
+    "summary": "Three backdoored models with temporal/lexical/semantic triggers. Universal flag: IHY compliance when triggered. M1: 'Current date: October 2025' = silent sleeper agent pattern from Anthropic's Sleeper Agents paper. Built 5,131-probe Dormant Lab infrastructure.",
+    "fingerprints": "5b9c1c3979f446e8"
+  },
+  "8876398f4bd350b0": {
+    "title": "Reddit r/ML: YOLO closed-set = lethal in foraging \u2014 OOD detection fix with energy scoring",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1s9idcm/",
+    "source": "Reddit/r/ML",
+    "date": "2026-04-02",
+    "category": "research",
+    "summary": "YOLO has no concept of 'I don't know.' Toxic mushroom classified as edible at 100% confidence. Solution: layered OOD pipeline with energy scoring on raw logits (Liu et al. EBM OOD paper). The most practically important ML safety post of the week.",
+    "fingerprints": "8876398f4bd350b0"
+  },
+  "7fab99e0ffca7eba": {
+    "title": "Reddit r/ML: RBF Attention \u2014 replacing dot-product with distance metric breaks entire ML stack",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1s9cdq0/",
+    "source": "Reddit/r/ML",
+    "date": "2026-04-01",
+    "category": "research",
+    "summary": "Replaced dot-product with RBF kernel: requires Q and K to actually be close. Required custom Triton kernels, different attention sinks, SuSiE replacing RoPE. Fun experiment but won't replace FlashAttention soon.",
+    "fingerprints": "7fab99e0ffca7eba"
+  },
+  "b16ac212228f3a46": {
+    "title": "Reddit r/ML: GraphZero \u2014 C++ zero-copy graph engine for GNN training, bypasses RAM entirely",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1ru7bnz/",
+    "source": "Reddit/r/ML",
+    "date": "2026-03-15",
+    "category": "research",
+    "summary": "POSIX mmap memory-maps 50GB graphs from SSD. Nanobind gives zero-copy pointers to PyTorch. OpenMP parallelizes disk I/O + CPU sampling + GPU math. Python allocates 0 bytes of RAM for the dataset.",
+    "fingerprints": "b16ac212228f3a46"
+  },
+  "c4ad7aadb18df210": {
+    "title": "Reddit r/ML: EV\u014dC \u2014 Leland McInnes's embedding vector clustering, UMAP+HDBSCAN rebuilt",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1s9js6b/",
+    "source": "Reddit/r/ML",
+    "date": "2026-04-02",
+    "category": "research",
+    "summary": "From the creator of UMAP and HDBSCAN author. Clustering library specifically for embedding vectors. Competitive with MiniBatchKMeans in speed, better in cluster quality.",
+    "fingerprints": "c4ad7aadb18df210"
+  },
+  "00bc6aae35485c83": {
+    "title": "Reddit r/ML: arXiv becoming independent nonprofit, separating from Cornell",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1rtjirw/",
+    "source": "Reddit/r/ML",
+    "date": "2026-03-15",
+    "category": "research",
+    "summary": "943 upvotes. arXiv hiring CEO at ~$300K/year. Simons Foundation backing independence from Cornell. Critical inflection point for open scientific publishing.",
+    "fingerprints": "00bc6aae35485c83"
+  },
+  "ed4c276267b17f72": {
+    "title": "microsoft/VibeVoice \u2014 Open-Source Frontier Voice AI (35,176 stars this week)",
+    "url": "https://github.com/microsoft/VibeVoice",
+    "source": "GitHub Trending",
+    "date": "2026-04-03",
+    "category": "tools",
+    "summary": "Microsoft's open-source frontier voice AI. 35,176 stars this week alone \u2014 fastest-growing AI project on GitHub. YaoyaoChang, MSLDCherryPick, Copilot, pengzhiliang, MSJwyu.",
+    "fingerprints": "ed4c276267b17f72"
+  },
+  "189e6de210a752b9": {
+    "title": "oh-my-codex / OmX \u2014 agent teams and HUDs for Claude Code (11,452 stars this week)",
+    "url": "https://github.com/Yeachan-Heo/oh-my-codex",
+    "source": "GitHub Trending",
+    "date": "2026-04-03",
+    "category": "tools",
+    "summary": "'Your codex is not alone.' Adds hooks, agent teams, HUDs for Claude Code. Yechan-Heo builds. Agent tooling ecosystem exploding.",
+    "fingerprints": "189e6de210a752b9"
+  },
+  "ebd9d30432f06914": {
+    "title": "Deep-Live-Cam \u2014 real-time face swap with one image, 87,586 total stars",
+    "url": "https://github.com/hacksider/Deep-Live-Cam",
+    "source": "GitHub Trending",
+    "date": "2026-04-03",
+    "category": "tools",
+    "summary": "One-click video deepfake with a single reference image. 87,586 total stars. The democratization of face swap technology continues to accelerate.",
+    "fingerprints": "ebd9d30432f06914"
+  },
+  "f07a4aa5b1320996": {
+    "title": "oh-my-claudecode \u2014 teams-first multi-agent orchestration for Claude Code (22,105 stars this week)",
+    "url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+    "source": "GitHub Trending",
+    "date": "2026-04-03",
+    "category": "tools",
+    "summary": "Multi-agent Claude Code orchestration. Teams-first approach. 22,105 stars this week. From the same author as oh-my-codex.",
+    "fingerprints": "f07a4aa5b1320996"
+  },
+  "cd2647181c1b0aa4": {
+    "title": "mvanhorn/last30days-skill \u2014 AI agent research skill for Reddit, X, YouTube, HN, Polymarket",
+    "url": "https://github.com/mvanhorn/last30days-skill",
+    "source": "GitHub Trending",
+    "date": "2026-04-03",
+    "category": "tools",
+    "summary": "17,668 stars this week. The AI-Scientist's intelligence gathering layer: systematic research across Reddit, X, YouTube, Hacker News, Polymarket. Built by mvanhorn.",
+    "fingerprints": "cd2647181c1b0aa4"
+  },
+  "2f6093973c136f0b": {
+    "title": "SakanaAI/AI-Scientist-v2 \u2014 workshop-level automated scientific discovery via agentic tree search",
+    "url": "https://github.com/SakanaAI/AI-Scientist-v2",
+    "source": "GitHub Trending",
+    "date": "2026-04-03",
+    "category": "tools",
+    "summary": "Automated scientific discovery agent using agentic tree search. 4,498 stars this week. From SakanaAI \u2014 the Tokyo-based AI research lab.",
+    "fingerprints": "2f6093973c136f0b"
+  },
+  "da79531460732101": {
+    "title": "NousResearch/hermes-agent \u2014 the agent that grows with you",
+    "url": "https://github.com/NosResearch/hermes-agent",
+    "source": "GitHub Trending",
+    "date": "2026-04-03",
+    "category": "tools",
+    "summary": "22,683 stars this week. NousResearch's agent framework designed for continuous learning and adaptation. 'The agent that grows with you.'",
+    "fingerprints": "da79531460732101"
+  },
+  "0ab8a193afed8674": {
+    "title": "affaan-m/everything-claude-code \u2014 agent harness performance optimization system",
+    "url": "https://github.com/affaan-m/everything-claude-code",
+    "source": "GitHub Trending",
+    "date": "2026-04-03",
+    "category": "tools",
+    "summary": "133,494 total stars. 23,500 this week. Agent harness optimization system for Claude Code.",
+    "fingerprints": "0ab8a193afed8674"
+  },
+  "85fc82a55b035a32": {
+    "title": "obra/superpowers \u2014 agentic skills framework for software development (132,095 total stars)",
+    "url": "https://github.com/obra/superpowers",
+    "source": "GitHub Trending",
+    "date": "2026-04-03",
+    "category": "tools",
+    "summary": "18,086 stars this week. Agentic skills framework and software development methodology.",
+    "fingerprints": "85fc82a55b035a32"
+  },
+  "4395ac73c959cffe": {
+    "title": "bytedance/deer-flow \u2014 open-source long-horizon SuperAgent harness (56,662 total stars)",
+    "url": "https://github.com/bytedance/deer-flow",
+    "source": "GitHub Trending",
+    "date": "2026-04-03",
+    "category": "tools",
+    "summary": "10,746 stars this week. ByteDance's open-source SuperAgent framework for long-horizon agentic tasks.",
+    "fingerprints": "4395ac73c959cffe"
+  },
+  "ed7f80a50fb681c6": {
+    "title": "Qwen3-32B \u2014 world's smartest MoE model, 4B active params, 128K context",
+    "url": "https://huggingface.co/Qwen/Qwen3-32B",
+    "source": "HuggingFace",
+    "date": "2026-04-03",
+    "category": "research",
+    "summary": "Qwen3-32B: 4B active parameters, 128K context, MoE architecture. The open-weight champion for long-context reasoning tasks.",
+    "fingerprints": "ed7f80a50fb681c6"
+  },
+  "02f37f9c5de0b5c8": {
+    "title": "Gemma 4 31B \u2014 dense transformer, 256K context, multimodal, Apache 2.0",
+    "url": "https://huggingface.co/google/gemma-4-31b",
+    "source": "HuggingFace",
+    "date": "2026-04-03",
+    "category": "research",
+    "summary": "Gemma 4 31B: dense model, 256K context, natively multimodal (text/image/video). Apache 2.0 license. Google's strongest open release.",
+    "fingerprints": "02f37f9c5de0b5c8"
+  },
+  "905765cda9e1f7b0": {
+    "title": "Qwen3-4B7A \u2014 miniature reasoning model with strong performance",
+    "url": "https://huggingface.co/Qwen/Qwen3-4B7A",
+    "source": "HuggingFace",
+    "date": "2026-04-03",
+    "category": "research",
+    "summary": "Small but capable: Qwen3-4B7A demonstrates that significant reasoning power is achievable at miniature scale. The efficiency frontier continues to push downward.",
+    "fingerprints": "905765cda9e1f7b0"
+  },
+  "68ff311a50b3b000": {
+    "title": "Google: Gemma 4 + Vids avatars + potential acquisition signals ecosystem push",
+    "url": "https://news.google.com/search?q=AI+artificial+intelligence&hl=en-US",
+    "source": "Google News",
+    "date": "2026-04-02",
+    "category": "lab",
+    "summary": "Google's AI news this week dominated by Gemma 4 Apache release, Vids avatar direction feature, and ongoing ecosystem expansion signals.",
+    "fingerprints": "68ff311a50b3b000"
+  },
+  "0a11cd96a48ed9b0": {
+    "title": "LiteLLM supply chain compromise \u2014 Mercor cyberattack traced to open-source library vulnerability",
+    "url": "https://techcrunch.com/2026/03/31/mercor-cyberattack-litellm/",
+    "source": "TechCrunch",
+    "date": "2026-03-31",
+    "category": "security",
+    "summary": "AI gateway LiteLLM library compromise triggered Mercor breach. Supply-chain event affecting thousands of AI companies using LiteLLM for LLM API management.",
+    "fingerprints": "0a11cd96a48ed9b0"
+  },
+  "bd6584eee4aeb6c2": {
+    "title": "LiteLLM drops Delve integration under dual pressure of security incident and ethical concerns",
+    "url": "https://techcrunch.com/2026/03/30/litellm-ditches-delve/",
+    "source": "TechCrunch",
+    "date": "2026-03-30",
+    "category": "security",
+    "summary": "LiteLLM severed ties with Delve (AI HR surveillance startup) following Mercor breach and ethics scrutiny over workplace surveillance products.",
+    "fingerprints": "bd6584eee4aeb6c2"
+  },
+  "e4ae5190fd44f262": {
+    "title": "Stanford: dangers of AI chatbots for personal advice are systematic, not edge cases",
+    "url": "https://techcrunch.com/2026/03/28/stanford-study-ai-chatbots-personal-advice/",
+    "source": "TechCrunch",
+    "date": "2026-03-28",
+    "category": "security",
+    "summary": "Hallucinated citations, emotionally manipulative outputs, lack of accountability. Stanford study catalogs the real risks as AI becomes a primary advice source for millions.",
+    "fingerprints": "e4ae5190fd44f262"
+  },
+  "fd9862b0378fbf00": {
+    "title": "15% of Americans willing to work under AI boss \u2014 Quinnipiac poll",
+    "url": "https://techcrunch.com/2026/03/30/ai-work-boss-supervisor/",
+    "source": "TechCrunch",
+    "date": "2026-03-30",
+    "category": "society",
+    "summary": "15% yes, 85% no. Stark generational divide: younger workers significantly more open to AI management. Critical data for enterprise AI deployment strategy.",
+    "fingerprints": "fd9862b0378fbf00"
+  },
+  "98a56dfa4ad020e1": {
+    "title": "AI trust gap: more use, less trust simultaneously",
+    "url": "https://techcrunch.com/2026/03/30/ai-trust-adoption-poll/",
+    "source": "TechCrunch",
+    "date": "2026-03-30",
+    "category": "society",
+    "summary": "AI adoption rising while trust falls. The widening 'trust gap' is a strategic challenge for AI companies deploying into high-stakes domains.",
+    "fingerprints": "98a56dfa4ad020e1"
+  },
+  "809bb176964404e1": {
+    "title": "Reddit r/ML: reviewers using rebuttal experiments as 'gotcha' moments \u2014 the field is broken",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1s5j8bg/",
+    "source": "Reddit/r/ML",
+    "date": "2026-03-28",
+    "category": "society",
+    "summary": "139 upvotes. A reviewer/author's critique: reviewers now require 5-10 additional experiments during rebuttal, often as 'gotcha' moments not genuine concerns. AC repeatedly agreed. Peer review culture under scrutiny.",
+    "fingerprints": "809bb176964404e1"
+  },
+  "5edb04f17b8c85e0": {
+    "title": "Reddit r/ML: can we stop glazing big labs? Credit assignment in ML research",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1rr7vup/",
+    "source": "Reddit/r/ML",
+    "date": "2026-03-11",
+    "category": "society",
+    "summary": "300 upvotes. Critique of how community attributes credit: 'Google invents X' when a Google intern was one of 15 authors. Warns ML is repeating biology's mistake of concentrating credit in elite institutions.",
+    "fingerprints": "5edb04f17b8c85e0"
   }
 }
