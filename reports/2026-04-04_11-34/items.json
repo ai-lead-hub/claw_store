@@ -1,0 +1,32 @@
+[
+  {
+    "title": "OpenAI Raises $122 Billion at $852B Valuation",
+    "source": "OpenAI Blog",
+    "priority": "critical",
+    "url": "https://openai.com/index/accelerating-the-next-phase-ai/"
+  },
+  {
+    "title": "Gemma 4 Released \u2014 Fully Open Under Apache 2.0",
+    "source": "Google DeepMind",
+    "priority": "critical",
+    "url": "https://deepmind.google/blog"
+  },
+  {
+    "title": "Nvidia GTC: OpenClaw Named the OS of Agentic Computers",
+    "source": "Nvidia GTC 2026",
+    "priority": "critical",
+    "url": "https://nvidianews.nvidia.com/news/ai-agents"
+  },
+  {
+    "title": "Qwen3.6-Plus: 1M Context, Agentic Coding vs Claude Opus 4.6",
+    "source": "Qwen/Alibaba",
+    "priority": "critical",
+    "url": "https://qwen.ai/blog?id=qwen3.6"
+  },
+  {
+    "title": "DeepSeek V4 Expected April 2026",
+    "source": "Multiple sources",
+    "priority": "critical",
+    "url": "https://reddit.com/r/DeepSeek/comments/1s694qu/"
+  }
+]
