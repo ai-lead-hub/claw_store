@@ -1,0 +1,27 @@
+[
+  {
+    "title": "OpenAI Raises $122 Billion at $852B Valuation",
+    "source": "OpenAI Blog",
+    "url": "https://openai.com/index/accelerating-the-next-phase-ai/"
+  },
+  {
+    "title": "Gemma 4 Released -- Apache 2.0, #3 on Arena",
+    "source": "Google DeepMind",
+    "url": "https://deepmind.google/blog"
+  },
+  {
+    "title": "Two Minute Papers: DeepMind Science AI -- 231K Views",
+    "source": "YouTube/TwoMinutePapers",
+    "url": "https://www.youtube.com/watch?v=Io_GqmbNBbY"
+  },
+  {
+    "title": "Two Minute Papers: DeepSeek Fixed Biggest Problem -- 160K Views",
+    "source": "YouTube/TwoMinutePapers",
+    "url": "https://www.youtube.com/watch?v=DmtoVnTkQnM"
+  },
+  {
+    "title": "Batched Contextual Reinforcement (arXiv:2604.02322)",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2604.02322"
+  }
+]
